@@ -322,7 +322,9 @@ header .fadeInUp {
   padding: 15px; }
 
 .pricing_price {
-  border-bottom-right-radius: 120px; }
+  /*border-bottom-right-radius: 120px;*/
+  height:160px;
+}
 
 .pricing_price h2 {
   font-size: 65px; }
