@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <title>ABOUT</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <!-----------------Global css------------------>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/animate/animate.min.css">
+    <link rel="stylesheet" href="vendors/imagehover/css/imagehover.min.css">
+    <link rel="stylesheet" href="vendors/iCheck/css/all.css">
+    <link rel="stylesheet" href="vendors/circliful/css/jquery.circliful.css">
+    <link rel="stylesheet" href="vendors/sweetalert2/css/sweetalert2.min.css">
+    <!-------------------custom css-------------------->
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+<!--------------------Preloader-------------->
+<div class="preloader" style="position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:100000;
+    backface-visibility: hidden;
+    background: #ffffff;">
+    <div style=" width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-position: center;
+    margin:-25px 0 0 -25px;">
+        <img src="images/loader.gif" alt="loading...">
+    </div>
+</div>
+<!------------------Preloader end------------------->
+<div class="tp-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-7 col-md-6">
+                <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-xs-5 col-md-6 text-right">
+                <span class="signin" data-toggle="modal" data-target="#myModal"><span class="hidden-xs">Sign In</span><i
+                        class="fa fa-sign-in visible-xs-block" aria-hidden="true"></i> </span>
+                <span class="register" data-toggle="modal" data-target="#myModal"><span
+                        class="hidden-xs">Register</span><i class="fa fa-user-plus visible-xs-block"
+                                                            aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myMegamenu"><span
+                        class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/3.png" class="img-responsive" alt="company-logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myMegamenu">
+                <ul class="nav navbar-nav">
+                    <li class="list2"><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+                    <li class="list2"><a href="services.html" class="hvr-underline-from-center">SERVICES</a></li>
+                    <li class="list2"><a href="about_us.html" class="hvr-underline-from-center">ABOUT</a></li>
+					<li class="list2"><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
+                    <li class="list2"><a href="careers.html" class="hvr-underline-from-center">CAREERS</a></li>
+					<li class="list2"><a href="products.html" class="hvr-underline-from-center">PRODUCTS</a></li>
+                    <li class="list2"><a href="contact_us.html" class="hvr-underline-from-center">CONTACT US</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</header>
+<!--Login And Register Modal-->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <br>
+            <div class="bs-example bs-example-tabs">
+                <ul id="myTab" class="nav nav-tabs ">
+                    <li id="signin_tab" class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+                    <li id="reg_tab"><a href="#signup" data-toggle="tab">Register</a></li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <div id="myTabContent" class="tab-content">
+                    <div class=" signin tab-pane fade active in" id="signin">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="userid"><span
+                                            class="glyphicon glyphicon-user text-primary"></span> User Id :</label>
+                                    <div class="controls">
+                                        <input id="userid" name="userid" type="text" class="form-control input-medium"
+                                               placeholder="user Id" required>
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="passwordinput"><span
+                                            class="glyphicon glyphicon-eye-open text-primary"></span> Password :</label>
+                                    <div class="controls">
+                                        <input type="password" id="passwordinput" name="passwordinput"
+                                               class="form-control input-medium" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="blue">Remember me</label>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls section-top-10">
+                                        <button id="signin_btn" name="signin" class="btn btn-success form-control">Sign
+                                            In
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade signup" id="signup">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <div class="control-group section-top-10">
+                                    <label for="user"><span class="glyphicon glyphicon-user text-primary"></span> Name
+                                        :</label>
+                                    <div class="controls">
+                                        <input id="user" name="userid" class="form-control input-large" type="text"
+                                               placeholder="Name" required="">
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="Email_id"><span
+                                            class="glyphicon glyphicon-envelope text-primary"></span> Email :</label>
+                                    <div class="controls">
+                                        <input id="Email_id" name="Email" class="form-control input-large" type="email"
+                                               placeholder="abcdef@xyz.com" required>
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label for="password"><span
+                                            class="glyphicon glyphicon-eye-open text-primary"></span>
+                                        Password :</label>
+                                    <div class="controls">
+                                        <input id="password" name="password" class="form-control input-large"
+                                               type="password" placeholder="Password" required>
+
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="reenterpassword"><span
+                                            class="glyphicon glyphicon-repeat text-primary"></span> Re-Enter Password :</label>
+                                    <div class="controls">
+                                        <input id="reenterpassword" class="form-control input-large"
+                                               name="reenterpassword" type="password" placeholder="Re Enter Password"
+                                               required="">
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="confirmsignup"></label>
+                                    <div class="controls">
+                                        <button id="confirmsignup" name="confirmsignup"
+                                                class="btn btn-success form-control">Sign Up
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Login And Register Modal-->
+<!--------------About section---------->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 text-center m-t-50">
+            <h2 class="text-center heading underline">About Us</h2>
+            <p>We're building a great company, and we're very excited about the future of the company.
+            </p>
+        </div>
+    </div>
+    <div class="row m-t-50">
+        <div class="col-sm-5">
+            <img src="images/about_img.png" class="img-responsive" alt="about_image">
+            <br/>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-xs-12 text-justify">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p> Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p> Nemo enim
+                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                        excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                        officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------About section end-->
+<!-------------What We do--------->
+<section class="circle_section parallax m-t-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 m-t-50">
+                <h2 class="heading2 underline2 text-white text-center">We Can Do</h2>
+                <p class="text-center text-white">We're building a great company, and we're very excited
+                    about the future of the company.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row circliful_custom">
+                    <div class="col-sm-4 col-xs-12">
+                        <div id="test-circle"></div>
+                        <h4 class="text-center text-white">Mobile Development</h4>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div id="test-circle1"></div>
+                        <h4 class="text-center text-white">Web Development</h4>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 section-bottom-pad-40">
+                        <div id="test-circle2"></div>
+                        <h4 class="text-center text-white">Consulting</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+</section>
+<!------------- What We do end--------->
+<!-----------------we promise -------------->
+<section class="m-t-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="heading underline">We Promise</h2>
+                <p class="text-center">praesentium voluptatum
+                    deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7 section-top-40">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about_col_space">
+                            <div class="row profile1">
+                                <div class="col-md-3 col-sm-3 col-xs-3 section-top-20">
+                                    <img src="images/responsible-energy-use.png" class="img-responsive"
+                                         alt="about_icons">
+                                </div>
+
+                                <div class="profile_data col-md-9 col-sm-9 col-xs-9 section-top-20">
+                                    <a href="about_us.html"><h5 class="profile_data">Responsibility</h5></a>
+                                    <p class="profile_data">Lorem ipsum dolor sit amet consectetuer adipiscing elit..
+                                        <br/><a href="about_us.html" class="text-success">
+                                            Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_col_space">
+                            <div class="row profile1">
+                                <div class="col-md-3  col-xs-3 section-top-20">
+                                    <img src="images/global.png" class="img-responsive" alt="about_icons">
+                                </div>
+                                <div class="profile_data col-md-9  col-xs-9 section-top-20">
+                                    <a href="about_us.html"><h5 class="profile_data">Global Alliances</h5></a>
+                                    <p class="profile_data">Lorem ipsum dolor sit amet consectetuer adipiscing elit..
+                                        <br/><a href="about_us.html" class="text-success">
+                                            Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about_col_space">
+                            <div class="row profile1">
+                                <div class="col-md-3  col-xs-3 section-top-20">
+                                    <img src="images/diversity.png" class="img-responsive" alt="about_icons">
+                                </div>
+                                <div class="profile_data col-md-9  col-xs-9 section-top-20">
+                                    <a href="about_us.html"><h5 class="profile_data">Diversity</h5></a>
+                                    <p class="profile_data">Lorem ipsum dolor sit amet consectetuer adipiscing elit..
+                                        <br/><a href="about_us.html" class="text-success">
+                                            Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_col_space">
+                            <div class="row profile1">
+                                <div class="col-md-3 col-sm-3 col-xs-3 section-top-20">
+                                    <img src="images/leadrship.png" class="img-responsive" alt="about_icons">
+                                </div>
+                                <div class="profile_data col-md-9 col-sm-9 col-xs-9 section-top-20">
+                                    <a href="about_us.html"><h5 class="profile_data"> Leadership</h5></a>
+                                    <p class="profile_data">Lorem ipsum dolor sit amet consectetuer adipiscing elit..
+                                        <br/><a href="about_us.html" class="text-success">
+                                            Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <img src="images/index3_1.png" alt="boyimg" class="img-responsive">
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-------------we promise end--------->
+<!-------------------Subscribe Section----------->
+<section class="subscribe_section parallax m-t-70">
+    <div class="container m-t-50">
+        <div class="row section-top-25">
+            <div class="col-sm-7 col-md-6 col-xs-12 section-top-10">
+                <h3 class="text-white m-t-70">Subscribe To Our Newsletter</h3>
+            </div>
+            <div class="col-sm-5 col-md-6 m-t-50 section-bottom-pad-40  input_transparent">
+                <br/>
+                <form action="subscribe.php" method="post" id="subscribe" autocomplete="off">
+                    <div class="input-group sub_input">
+                        <input type="email" name="email" id="email" class="form-control email"
+                               placeholder="Your Email Address" aria-describedby="email" required/>
+                        <span class="input-group-addon"><button type="submit" class="subscribe_btn"><i
+                                class="fa fa-paper-plane text-white" aria-hidden="true"></i></button></span>
+                    </div>
+                </form>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <br/>
+</section>
+<!-----------------Subscribe section End-------->
+<!----------------Our Services Section---------->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 m-t-50">
+            <h2 class="heading underline">Our Services</h2>
+            <p class="text-center">We're building a great company, and we're very excited about the
+                future of the company.</p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="row m-t-50">
+                <div class="col-xs-12">
+                    <img src="images/big-data.png" alt="bigdata" class="img-responsive services_icon center-block">
+                </div>
+                <div class="col-xs-12 text-center">
+                    <h5>Big Data</h5>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore etdolore magna aliqua</p>
+                    <a href="service_detailed.html" class="text-success">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row m-t-50">
+                <div class="col-xs-12">
+                    <img src="images/coding.png" alt="bigdata" class="img-responsive services_icon center-block">
+                </div>
+                <div class="col-xs-12 text-center">
+                    <h5>Web Development</h5>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore etdolore magna aliqua</p>
+                    <a href="service_detailed.html" class="text-success">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row m-t-50">
+                <div class="col-xs-12">
+                    <img src="images/cloud-computing.png" alt="bigdata"
+                         class="img-responsive services_icon center-block">
+                </div>
+                <div class="col-xs-12 text-center">
+                    <h5>Cloud Solutions</h5>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore etdolore magna aliqua</p>
+                    <a href="service_detailed.html" class="text-success">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="row m-t-50">
+                <div class="col-xs-12">
+                    <img src="images/light-bulb.png" alt="bigdata" class="img-responsive services_icon center-block">
+                </div>
+                <div class="col-xs-12 text-center">
+                    <h5>Guaranteed Quality</h5>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore etdolore magna aliqua</p>
+                    <a href="service_detailed.html" class="text-success">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row m-t-50">
+                <div class="col-xs-12">
+                    <img src="images/shovel.png" alt="bigdata" class="img-responsive services_icon center-block">
+                </div>
+                <div class="col-xs-12 text-center">
+                    <h5>Site Construction</h5>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore etdolore magna aliqua</p>
+                    <a href="service_detailed.html" class="text-success">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row m-t-50">
+                <div class="col-xs-12">
+                    <img src="images/construction-excavator.png" alt="bigdata"
+                         class="img-responsive services_icon center-block">
+                </div>
+                <div class="col-xs-12 text-center">
+                    <h5>Construction Activities</h5>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore etdolore magna aliqua</p>
+                    <a href="service_detailed.html" class="text-success">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Meet Our Team Section------->
+<section class="meetourteam m-t-70 parallax">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 m-t-50">
+                <h2 class="text-white heading2 underline2 text-center">Meet Our Team</h2>
+                <p class="text-center text-white">We're building a great company, and we're very excited
+                    about the future of the company.</p>
+
+            </div>
+        </div>
+        <div class="row m-t-50">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-sm-3 text-center">
+                        <img src="images/meet5.png" alt="girlimg"
+                             class="img-responsive img-circle center-block industry-img">
+                        <h4 class="text-white">Jessica Mantra</h4>
+                        <p class="text-white">Developer</p>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <img src="images/meet2.png" alt="girlimg"
+                             class="img-responsive img-circle center-block industry-img">
+                        <h4 class="text-white">James Stone</h4>
+                        <p class="text-white">Designer</p>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <img src="images/meet4.png" alt="girlimg"
+                             class="img-responsive img-circle center-block industry-img">
+                        <h4 class="text-white">Lamere Salley</h4>
+                        <p class="text-white">Team Lead</p>
+                    </div>
+                    <div class="col-sm-3 text-center section-bottom-pad-40">
+                        <img src="images/meet3.png" alt="girlimg"
+                             class="img-responsive img-circle center-block industry-img">
+                        <h4 class="text-white">Jhon Does</h4>
+                        <p class="text-white">Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape"></div>
+</section>
+<!-----------Meet our team section end------------->
+<!-------------Footer Start------------------>
+<section class="footer_one">
+    <footer>
+        <div class="container">
+            <div class="row section-top-40">
+                <div class="col-md-3 col-sm-6 section-top-25">
+                    <h4 class="text-white">Corporate</h4>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="footer_text_color">There are many variations of passages of Lorem Ipsum available,
+                                but
+                                the majority have suffered alteration.</p>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <span class="foot_icon">
+                            <a href="#"><i class="fa fa-facebook section-top-10 footer_social_icons"
+                                           aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter section-top-10 footer_social_icons"
+                                           aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin section-top-10 footer_social_icons"
+                                           aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram section-top-10 footer_social_icons"
+                                           aria-hidden="true"></i></a>
+                        </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3  col-lg-3 col-sm-6 section-top-25">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="text-white">Recent Posts</h4>
+                            <hr/>
+                        </div>
+                        <div class="footer_contact">
+                            <div class="col-md-1  col-xs-1"><a href="blog.html"><i class="fa fa-caret-right div_hover1"
+                                                                                   aria-hidden="true"></i></a></div>
+                            <div class="col-md-10  col-xs-10"><a href="blog.html" class="div_hover2">The right team in
+                                the
+                                right place</a><br/><span class="footer_text_color">Jan. 25, 2017   </span></div>
+                        </div>
+                        <div class="clearfix visible-xs-block visible-sm-block visible-lg-block visible-md-block"></div>
+                        <div class="footer_contact">
+                            <div class="col-md-1  col-xs-1 section-top-10"><a href="blog.html"><i
+                                    class="fa fa-caret-right div_hover1" aria-hidden="true"></i></a></div>
+                            <div class="col-md-10  col-xs-10 section-top-10"><a href="blog.html" class="div_hover2">How
+                                to
+                                develop your company </a><br/><span class="footer_text_color">Jan. 21, 2017   </span>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block visible-sm-block visible-lg-block visible-md-block"></div>
+                        <div class="footer_contact">
+                            <div class="col-md-1  col-xs-1 section-top-10"><a href="blog.html"><i
+                                    class="fa fa-caret-right div_hover1" aria-hidden="true"></i></a></div>
+                            <div class="col-md-10  col-xs-10 section-top-10"><a href="blog.html" class="div_hover2">
+                                Managing your community blog</a><br/><span
+                                    class="footer_text_color">Jan. 18, 2017   </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 section-top-25">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="text-white">Dribbble</h4>
+                            <hr/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="shots"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 section-top-25">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="text-white">Twitter Feed</h4>
+                            <hr/>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div class="tweet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<!-------------------Footer section End------------------>
+<!------------------Copy rights------------------->
+<section class="copy-rights">
+    <div class="container ">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 section-top-15">
+                <p class="footer_text_color"><a href="index.html">Home</a> &nbsp;
+                    <a href="services.html">Services</a> &nbsp; <a href="about_us.html">About</a> &nbsp;
+                    <a href="careers.html">Careers</a></p>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 text-right section-top-15">
+
+                <p class="footer_text_color  ">Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+            </div>
+        </div>
+        <a href="#" id="return-to-top"><img src="images/backto.png" alt="image-missing"></a>
+    </div>
+</section>
+<!------------------Copy rights End------------------>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendors/iCheck/js/icheck.js"></script>
+<script src="vendors/isotope/js/isotope.pkgd.min.js"></script>
+<script src="vendors/countup/js/countUp.min.js"></script>
+<script src="vendors/circliful/js/jquery.circliful.min.js"></script>
+<script src="vendors/jribbble/js/jribbble.min.js"></script>
+<script src="vendors/sweetalert2/js/sweetalert2.min.js"></script>
+<!----------------Page Level JS-------------------->
+<script src="js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,633 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <title>BLOG</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <!----------------Globaal css---------------->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/plyr/css/plyr.css" rel="stylesheet">
+    <link href="vendors/wow/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/iCheck/css/all.css">
+    <!--------------------custom css---------------->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<!----------------Preloader-------------------->
+<div class="preloader" style="position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:100000;
+    backface-visibility: hidden;
+    background: #ffffff;">
+    <div style=" width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-position: center;
+    margin:-25px 0 0 -25px;">
+        <img src="images/loader.gif" alt="loading...">
+    </div>
+</div>
+<!--------------------Preloader end------------------------->
+<div class="tp-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-7 col-md-6">
+                <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-xs-5 col-md-6 text-right">
+                <span class="signin" data-toggle="modal" data-target="#myModal"><span class="hidden-xs">Sign In</span><i
+                        class="fa fa-sign-in visible-xs-block" aria-hidden="true"></i> </span>
+                <span class="register" data-toggle="modal" data-target="#myModal"><span
+                        class="hidden-xs">Register</span><i class="fa fa-user-plus visible-xs-block"
+                                                            aria-hidden="true"></i></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myMegamenu"><span
+                        class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/3.png" class="img-responsive" alt="company-logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myMegamenu">
+                <ul class="nav navbar-nav">
+                    <li class="list2"><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+                    <li class="list2"><a href="services.html" class="hvr-underline-from-center">SERVICES</a></li>
+                    <li class="list2"><a href="about_us.html" class="hvr-underline-from-center">ABOUT</a></li>
+					<li class="list2"><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
+                    <li class="list2"><a href="careers.html" class="hvr-underline-from-center">CAREERS</a></li>
+					<li class="list2"><a href="products.html" class="hvr-underline-from-center">PRODUCTS</a></li>
+                    <li class="list2"><a href="contact_us.html" class="hvr-underline-from-center">CONTACT US</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</header>
+<!--Login And Register Modal-->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <br>
+            <div class="bs-example bs-example-tabs">
+                <ul id="myTab" class="nav nav-tabs ">
+                    <li id="signin_tab" class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+                    <li id="reg_tab"><a href="#signup" data-toggle="tab">Register</a></li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <div id="myTabContent" class="tab-content">
+                    <div class=" signin tab-pane fade active in" id="signin">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="userid"><span
+                                            class="glyphicon glyphicon-user text-primary"></span> User Id :</label>
+                                    <div class="controls">
+                                        <input id="userid" name="userid" type="text" class="form-control input-medium"
+                                               placeholder="user Id" required>
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="passwordinput"><span
+                                            class="glyphicon glyphicon-eye-open text-primary"></span> Password :</label>
+                                    <div class="controls">
+                                        <input type="password" id="passwordinput" name="passwordinput"
+                                               class="form-control input-medium" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="blue">Remember me</label>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls section-top-10">
+                                        <button id="signin_btn" name="signin" class="btn btn-success form-control">Sign
+                                            In
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade signup" id="signup">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <div class="control-group section-top-10">
+                                    <label for="user"><span class="glyphicon glyphicon-user text-primary"></span> Name
+                                        :</label>
+                                    <div class="controls">
+                                        <input id="user" name="userid" class="form-control input-large" type="text"
+                                               placeholder="Name" required="">
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="Email_id"><span
+                                            class="glyphicon glyphicon-envelope text-primary"></span> Email :</label>
+                                    <div class="controls">
+                                        <input id="Email_id" name="Email" class="form-control input-large" type="email"
+                                               placeholder="abcdef@xyz.com" required>
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label for="password"><span
+                                            class="glyphicon glyphicon-eye-open text-primary"></span>
+                                        Password :</label>
+                                    <div class="controls">
+                                        <input id="password" name="password" class="form-control input-large"
+                                               type="password" placeholder="Password" required>
+
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="reenterpassword"><span
+                                            class="glyphicon glyphicon-repeat text-primary"></span> Re-Enter Password :</label>
+                                    <div class="controls">
+                                        <input id="reenterpassword" class="form-control input-large"
+                                               name="reenterpassword" type="password" placeholder="Re Enter Password"
+                                               required="">
+                                    </div>
+                                </div>
+                                <div class="control-group section-top-10">
+                                    <label class="control-label" for="confirmsignup"></label>
+                                    <div class="controls">
+                                        <button id="confirmsignup" name="confirmsignup"
+                                                class="btn btn-success form-control">Sign Up
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Login And Register Modal-->
+<!--------------------Body Section Start----------------------->
+<section>
+    <div class="blog_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12 section-top-25">
+                    <h2 class="text-white text-center heading2 underline2">Blog </h2>
+                    <p class="text-white text-justify section-top-25">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Corporate describes
+                        team conversation service Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                    <p class="text-center"><a href="blog_single_post.html"
+                                              class="btn btn-danger btn-md section-top-align">Learn More About This
+                        Blog</a></p>
+                </div>
+                <div class="col-md-4 col-xs-12 m-t-50 video">
+                    <div data-type="youtube" data-video-id="x0y3VgjhGw0"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="row wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-12 m-t-50">
+                        <h4 class="heading_left underline">
+                            The Right Team In The Right Place</h4>
+                    </div>
+                </div>
+                <div class="row wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-12">
+                        <div class="m-t-50">
+                            <div class="zoom thumb_zoom">
+                                <img src="images/blog1.png" class="img-responsive" alt="corporate1">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="section-top-align">
+                <div class="row">
+                    <div class="hr_blog font14">
+                        <div class="col-md-4 col-xs-7">
+                          <span class="icon1 pointer_cursor wow fadeInLeft" id="bloglike1"
+                                data-wow-duration="1s" data-wow-delay="0.2s"><i
+                                  class="fa fa-thumbs-o-up"></i>&nbsp;<span class="like1">35</span></span>
+                            <span class="icon_hov"><i class="fa fa-share-alt share_icon_padding" aria-hidden="true"></i> <span
+                                    class="mont">Share</span></span>
+                        </div>
+                        <div class="col-md-8 col-xs-5 text-right">
+                            <a href="blog_single_post.html" class="blog_hover"><span class="mont">View Post</span>
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <p>Ut wisi enim ad minim veniam, quis
+                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. <i><a
+                                        href="#" class="text-primary">Duis autem vel eum iriure</a></i> dolor in
+                                hendrerit in vulputate
+                                velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+                            <p>eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                                augue duis dolore te feugait nulla
+                                facilisi. Nam liber tempor cum soluta nobis. Claritas est etiam processus dynamicus, qui
+                                sequitur
+                                mutationem consuetudium lectorum.</p>
+                        </div>
+                    </div>
+                </div>
+                <section>
+                    <!-- section divider-->
+                    <div class="seperator section-top-25">
+                        <i class="fa fa-circle-o"></i>
+                    </div>
+                    <!--section divider end-->
+                </section>
+                <div class="row">
+                    <div class="col-xs-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h4 class="heading_left underline">
+                            How To Develop Your Company </h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-top-10">
+                            <div class="zoom thumb_zoom">
+                                <img src="images/blogg.jpg" class="img-responsive" alt="corporate2">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="section-top-align">
+                <div class="row">
+                    <div class="hr_blog font14">
+                        <div class="col-md-4 col-xs-7">
+                         <span class="icon1 pointer_cursor wow fadeInLeft" id="bloglike2"
+                               data-wow-duration="1s" data-wow-delay="0.2s"><i
+                                 class="fa fa-thumbs-o-up"></i>&nbsp;<span class="like1">35</span></span>
+                            <span class="icon_hov"><i class="fa fa-share-alt share_icon_padding" aria-hidden="true"></i> <span
+                                    class="mont">Share</span></span>
+                        </div>
+                        <div class="col-md-8 col-xs-5 text-right">
+                            <a href="blog_single_post.html" class="blog_hover"><span class="mont">View Post</span>
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <p>Ut wisi enim ad minim veniam, quis
+                                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. <i><a
+                                        href="#" class="text-primary">Duis autem vel eum iriure</a></i> dolor in
+                                hendrerit in vulputate
+                                velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+                            <p>eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                                augue duis dolore te feugait nulla
+                                facilisi. Nam liber tempor cum soluta nobis. Claritas est etiam processus dynamicus, qui
+                                sequitur
+                                mutationem consuetudium lectorum.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4 col-xs-12 m-t-50">
+                <div class="row">
+                    <div class="col-xs-12 section-top-5">
+                        <h5 class="heading_left underline">Latest News</h5>
+                    </div>
+                </div>
+                <div class="row section-top-25">
+                    <div class="col-xs-12">
+                        <ul class="newsticker list-unstyled">
+                            <li class="latestnews_lihov">
+                                How To Get Ready With All Your Business. <br/>
+                                <small>14th Sep, 2017</small>
+                                <hr>
+                            </li>
+                            <li class="latestnews_lihov">
+                                Our Agency Is The Best <br/>
+                                <small>13th Sep, 2017</small>
+                                <hr>
+                            </li>
+                            <li class="latestnews_lihov">
+                                Team Of Professionals <br/>
+                                <small>12th Sep, 2017</small>
+                                <hr>
+                            </li>
+                            <li class="latestnews_lihov">
+                                Get New Professionals <br/>
+                                <small>11th Sep, 2017</small>
+                                <hr>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row section-top-25 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="">
+                                <div class="col-xs-12">
+                                    <h5 class="heading_left underline">Quick Links</h5>
+                                </div>
+                                <div class="col-xs-12 section-top-15">
+                                    <a href="index.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Home</span></p>
+                                    </a>
+                                    <a href="about_us.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>About</span></p>
+                                    </a>
+                                    <a href="insights.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Insights</span></p>
+                                    </a>
+                                    <a href="case_studies.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Case Studies</span></p>
+                                    </a>
+                                    <a href="services.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Services</span></p>
+                                    </a>
+
+                                    <a href="media.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Media</span></p>
+                                    </a>
+                                    <a href="investors.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Investors</span></p>
+                                    </a>
+                                    <a href="blog.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Blog</span></p>
+                                    </a>
+                                    <a href="gallery.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Gallery</span></p>
+                                    </a>
+                                    <a href="products.html">
+                                        <p class="blog_links hvr-icon-forward"><i class="fa fa-arrow-right"
+                                                                                  aria-hidden="true"></i>
+                                            &nbsp;
+                                            &nbsp;<span>Products</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row section-top-15 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-12">
+                        <h5 class="heading_left underline">Get In Touch With Us</h5>
+                    </div>
+                </div>
+                <div class="row section-top-10 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                    <div class="col-xs-2 col-sm-1 col-md-2 section-top-10">
+               <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x text-info"></i>
+                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+               </span>
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-10 section-top-align">
+                        987654321, 8867192049
+                    </div>
+
+                </div>
+                <div class="row wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-2 col-sm-1 col-md-2 section-top-10">
+               <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x text-info"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-10 section-top-align">
+                        sales@corporate.com
+                    </div>
+                </div>
+                <div class="row wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-2 col-sm-1 col-md-2 section-top-10">
+               <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x text-info"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-10 section-top-align">
+                        <p>52436 Australia Sydney, 2127</p>
+                    </div>
+                </div>
+
+                <div class="row section-top-15 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-12">
+                        <h5 class="heading_left underline">Advertisement</h5>
+                    </div>
+                </div>
+                <div class="row wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-6 section-top-25">
+                        <img src="images/add.png" class="img-responsive center-block" alt="image-missing">
+                    </div>
+                    <div class="col-xs-6 section-top-25">
+                        <img src="images/add.png" class="img-responsive center-block" alt="image-missing">
+                    </div>
+                </div>
+                <div class="row section-top-25 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-xs-12">
+                        <img src="images/add2.jpg" class="img-responsive center-block" alt="image-missing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------Body Section End------------------>
+<!----------------Footer Start--------------------->
+<!------------Footer Caret Shape------------>
+<div class="shape section-top-50"></div>
+<!------------Footer Caret Shape end------------>
+<section class="footer_one">
+    <footer>
+        <div class="container">
+            <div class="row section-top-40">
+                <div class="col-md-3 col-sm-6 section-top-25">
+                    <h4 class="text-white">Corporate</h4>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="footer_text_color">There are many variations of passages of Lorem Ipsum available,
+                                but
+                                the majority have suffered alteration.</p>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <span class="foot_icon">
+                            <a href="#"><i class="fa fa-facebook section-top-10 footer_social_icons"
+                                           aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter section-top-10 footer_social_icons"
+                                           aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin section-top-10 footer_social_icons"
+                                           aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram section-top-10 footer_social_icons"
+                                           aria-hidden="true"></i></a>
+                        </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3  col-lg-3 col-sm-6 section-top-25">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="text-white">Recent Posts</h4>
+                            <hr/>
+                        </div>
+                        <div class="footer_contact">
+                            <div class="col-md-1  col-xs-1"><a href="blog.html"><i class="fa fa-caret-right div_hover1"
+                                                                                   aria-hidden="true"></i></a></div>
+                            <div class="col-md-10  col-xs-10"><a href="blog.html" class="div_hover2">The right team in
+                                the
+                                right place</a><br/><span class="footer_text_color">Jan. 25, 2017   </span></div>
+                        </div>
+                        <div class="clearfix visible-xs-block visible-sm-block visible-lg-block visible-md-block"></div>
+                        <div class="footer_contact">
+                            <div class="col-md-1  col-xs-1 section-top-10"><a href="blog.html"><i
+                                    class="fa fa-caret-right div_hover1" aria-hidden="true"></i></a></div>
+                            <div class="col-md-10  col-xs-10 section-top-10"><a href="blog.html" class="div_hover2">How
+                                to
+                                develop your company </a><br/><span class="footer_text_color">Jan. 21, 2017   </span>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block visible-sm-block visible-lg-block visible-md-block"></div>
+                        <div class="footer_contact">
+                            <div class="col-md-1  col-xs-1 section-top-10"><a href="blog.html"><i
+                                    class="fa fa-caret-right div_hover1" aria-hidden="true"></i></a></div>
+                            <div class="col-md-10  col-xs-10 section-top-10"><a href="blog.html" class="div_hover2">
+                                Managing your community blog</a><br/><span
+                                    class="footer_text_color">Jan. 18, 2017   </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 section-top-25">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="text-white">Dribbble</h4>
+                            <hr/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="shots"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 section-top-25">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="text-white">Twitter Feed</h4>
+                            <hr/>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <div class="tweet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<!-------------------Footer section End------------------>
+<!------------------Copy rights------------------->
+<section class="copy-rights">
+    <div class="container ">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 section-top-15">
+                <p class="footer_text_color"><a href="index.html">Home</a> &nbsp;
+                    <a href="services.html">Services</a> &nbsp; <a href="about_us.html">About</a> &nbsp;
+                    <a href="careers.html">Careers</a></p>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 text-right section-top-15">
+
+                <p class="footer_text_color  ">Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+            </div>
+        </div>
+        <a href="#" id="return-to-top"><img src="images/backto.png" alt="image-missing"></a>
+    </div>
+</section>
+<!------------------Copy rights End------------------>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendors/plyr/js/plyr.js"></script>
+<script src="vendors/wow/js/wow.min.js"></script>
+<script src="vendors/jquery_newsTicker/js/newsTicker.js"></script>
+<script src="vendors/iCheck/js/icheck.js"></script>
+<script src="vendors/jribbble/js/jribbble.min.js"></script>
+<!-----------------Page Level Js------------------->
+<script src="js/custom.js"></script>
+</body>
+</html>
