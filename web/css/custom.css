@@ -42,6 +42,9 @@ label {
 .section-top-50, .m-t-50 {
   margin-top: 50px; }
 
+.section-top-20, .m-t-20 {
+    margin-top: 20px; }
+
 .m-t-70 {
   margin-top: 70px; }
 
@@ -128,7 +131,7 @@ header {
 
 .tp-header {
   padding: 10px 0 10px 0;
-  background-color: #3e4955;
+  background-color: #02b3e4;
   color: #ddd;
   outline: none; }
 
@@ -465,7 +468,7 @@ a .fa-link {
 
 .blog_banner {
   position: relative;
-  background-image: url("../images/blog_background.png");
+  /*background-image: url("../images/blog_background.png");*/
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 30px 0; }
@@ -667,7 +670,7 @@ header, .navbar {
     height: 50px; } }
 
 footer {
-  background-color: #000010; }
+  background-color: #556069; }
 
 footer a, .footer_text_color, .footer_text_color a {
   color: #a2a9af; }
@@ -704,7 +707,7 @@ footer span {
   border-color: #ffffff !important; }
 
 footer hr {
-  border-color: #3d4146;
+  border-color: #5e6971;
   margin-bottom: 20px; }
 
 .footer_social_icons {
@@ -712,7 +715,7 @@ footer hr {
   width: 55px;
   text-align: center;
   padding-top: 17px;
-  background-color: #555;
+  background-color: #2284F1;
   color: #fff;
   margin-right: 4px;
   font-size: 22px;
@@ -1041,6 +1044,9 @@ figcaption h6 {
 .m-t-50 {
   margin-top: 50px; }
 
+.m-t-20{
+    margin-top: 20px;
+}
 .meetour_back {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;

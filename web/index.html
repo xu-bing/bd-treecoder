@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="vendors/iCheck/css/all.css">
     <link rel="stylesheet" href="vendors/iCheck/css/all.css">
     <link rel="stylesheet" href="css/iconfont-embedded.css">
+    <link rel="stylesheet" href="css/CustomScrollbar.css">
+
 
     <!----------------custo css----------------->
     <link rel="stylesheet" href="css/custom.css">
 
-    <!--<link rel="stylesheet" type="text/css" hr`ef="all-dce9f06ec3.css">-->
-    <!--<link rel="stylesheet" href="all_v2_common.css?v=0510">-->
 
     <!--self-->
     <style type="text/css">
@@ -131,6 +131,8 @@
             float: right;
         }
 
+
+
         /*
         页脚免费视听框
         */
@@ -188,7 +190,211 @@
         }
 
 
+        /*师资*/
+
+        .index_box5{background: #fff;
+           /* padding-bottom: 100px;*/}
+        .index_box5 .ibox_hd h2{padding: 80px 0 0;}
+        .index_box5 .ibox5wow{
+            transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+        .index_box5 .ibox5_con{
+            width: 100%;
+            /*overflow: hidden;*/ /* 内容限制在容器中，如果内容超出，则显示部分*/
+            position: relative;}
+        .index_box5 .ibox5_con ul{position: absolute; width: 2190px;height: 412px;left: 0;top: 44px;}
+        .mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background: #ff986f !important;height: 6px !important;}
+        .mCS-3d.mCSB_scrollTools_horizontal .mCSB_draggerRail{
+            background: #ebebeb !important;
+            box-shadow: none !important;
+            height: 6px !important;
+            cursor: pointer !important;
+        }
+        .index_box5 .ibox5_con ul li{
+            float: left;
+            width: 282px;
+            margin-left: 28px;
+            padding-bottom: 16px;
+            border: 1px #e9e9e9 solid;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 2px 40px rgba(232,232,232,.6);
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .index_box5 .ibox5_con ul li .ibox5c{width: 100%;position: relative;}
+        .index_box5 .ibox5_con ul li .ibox5c .ibox5img{position: relative;}
+        .index_box5 .ibox5_con ul li .ibox5c .ibox5img .ibox5tea img{width: 100%;}
+        .index_box5 .ibox5_con ul li .ibox5c .ibox5img .ibox5des{
+            width: 100%;
+            height: 321px;
+            position: absolute;
+            left: 0;
+            top: -321px;
+            background: #ff7443;
+            border-radius: 18px;
+            opacity: 0;
+        }
+        .index_box5 .ibox5_con ul li .ibox5c .ibox5img .ibox5des p{
+            font-size: 14px;
+            color: #fff;
+            line-height: 26px;
+            padding: 38px 20px 0;
+        }
+        .index_box5 .ibox5_con ul li .ibox5c .ibox5th{
+            width: 91px;
+            height: 91px;
+            position: absolute;
+            left: 96px;
+            top: 165px;
+            border-radius: 50%;
+            overflow: hidden;
+            opacity: 0;
+        }
+        .index_box5 .ibox5_con ul li .ibox5c .ibox5th img{
+            width: 100%;
+            border-radius: 50%;
+            transform: scale(1.2);
+        }
+        .index_box5 .ibox5_con ul li .ibox5c .ibox5item h2{
+            font-size: 18px;
+            color: #2b2b2b;
+            text-align: center;
+            padding: 22px 0 4px;
+        }
+        .index_box5 .ibox5_con ul li .ibox5c .ibox5item p{
+            font-size: 14px;
+            color: #9f9f9f;
+            text-align: center;
+        }
+        .index_box5 .ibox5_con ul li .ibox5c .line{
+            width: 1px;
+            height: 18px;
+            background: #e1e1e1;
+            position: absolute;
+            left: 141px;
+            top: 282px;
+            opacity: 0;
+        }
+        .index_box5 .ibox5_con ul li:hover{
+            border-color: transparent;
+            box-shadow: none;
+        }
+        .index_box5 .ibox5_con ul li:hover .ibox5c .ibox5img .ibox5tea{
+            transform: scale(.2);
+            opacity: 0;
+        }
+        .index_box5 .ibox5_con ul li:hover .ibox5c .ibox5img .ibox5des{
+            top: 0;
+            opacity: 1;
+        }
+        .index_box5 .ibox5_con ul li:hover .ibox5c .ibox5th{
+            top: 260px;
+            opacity: 1;
+        }
+        .index_box5 .ibox5_con ul li:hover .ibox5c .ibox5item{margin-top: 25px;}
+        .index_box5 .ibox5_con ul li:hover .ibox5c .ibox5item h2{color: #f16e12;}
+        .index_box5 .ibox5_con ul li:hover .ibox5c .line{
+            top: 351px;
+            opacity: 1;
+        }
+        .index_box5 .ibox5_con .ibox5gdt{
+            width: 1000px;
+            height: 5px;
+            background: #ebebeb;
+            margin: 50px auto 0;
+            position: relative;
+        }
+        .index_box5 .ibox5_con .ibox5gdt .ibox5gdt_con{
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: #ff986f;
+        }
+        .index_box5 .ibox5pic1{
+            display: block;
+            margin: 32px auto 0;
+        }
+
+        /*其它服务*/
+        .cell-other-service a:hover{
+            color:#FF6666;
+        }
+
+        /*彩虹线*/
+        .bottom_style_list {
+            margin-top:-15px;padding:0px;
+            width: 100%;
+            text-align: left;
+        }
+        .bottom_style_list .frist_yellow {
+            display: inline-block;
+            width: 70px;
+            height: 3px;
+            background-color: #ffd400;
+        }
+        .bottom_style_list .second_bule {
+            display: inline-block;
+            width: 100px;
+            height: 3px;
+            background-color: #2284f1;
+            margin: 0 5px;
+        }
+
+        .bottom_style_list .third_red {
+            display: inline-block;
+            width: 70px;
+            height: 3px;
+            background-color: #ff3838;
+        }
+
     </style>
+
+    <style type="text/css">
+        .contact-us-im{
+            list-style-type: none;
+            margin-left:0px;
+            padding:0px;
+        }
+
+        .contact-us-im li{
+            float:left;
+        }
+
+        .contact-us-im li ul{
+            position:absolute;z-index:100;margin-left:-70px;display:none;
+            margin-top:10px;
+            list-style-type: none;
+        }
+        .contact-us-im li img{
+            width:120px;height:120px;
+        }
+
+        .contact-us-im li p{
+            top: -5px;
+            margin-left:-40px;
+            width: 200px;
+            height: 60px;
+            font-size: 30px;
+            line-height: 70px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #86CB35;
+        }
+
+    </style>
+
+    <!--<style type="text/css">
+        .content-width {MARGIN: auto;WIDTH: 100%;}
+        .content-width img{MAX-WIDTH: 100%!important;HEIGHT: auto!important;width:expression(this.width > 600 ? "600px" : this.width)!important;}
+    </style>-->
+
+
 </head>
 <body>
 <!-------------------Preloader---------------->
@@ -216,17 +422,39 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-7 col-md-6">
-                <a href="#"> <i class="icon-font i-qq-border fa" aria-hidden="true"></i></a>
-                <a href="#"><i class="icon-font i-weixin-border fa" aria-hidden="true"></i></a>
-                <a href="#"><i class="icon-font i-phone fa" aria-hidden="true"></i></a>
+                <!--<a href="#"> <i class="icon-font i-qq fa" aria-hidden="true"></i></a>
+                <a href="#"><i class="icon-font i-weixin fa" aria-hidden="true"></i></a>
+                <a href="#"><i class="icon-font i-phone fa" aria-hidden="true"></i></a>-->
 
+                <ul class="contact-us-im">
+                    <li>
+                        <a href="tencent://message/?uin=745636944&Menu-=yes"> <i class="icon-font i-qq fa"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="icon-font i-weixin fa"></i></a>
+                        <ul>
+                            <li>
+                                <img src="images/wechat_code.jpg"/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="icon-font i-phone fa"></i></a>
+                        <ul>
+                            <li>
+                                <p>13813726471</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
 
             </div>
             <div class="col-xs-5 col-md-6 text-right">
-                <span class="signin" data-toggle="modal" data-target="#myModal"><span class="hidden-xs">登录</span><i
+                <span class="signin" data-toggle="modal" data-target="#myModal"><span class="hidden-xs" style="color:#223E57">登录</span><i
                         class="fa fa-sign-in visible-xs-block" aria-hidden="true"></i> </span>
                 <span class="register" data-toggle="modal" data-target="#myModal"><span
-                        class="hidden-xs">注册</span><i class="fa fa-user-plus visible-xs-block"
+                        class="hidden-xs" style="color:#223E57">注册</span><i class="fa fa-user-plus visible-xs-block"
                                                             aria-hidden="true"></i></span>
 
             </div>
@@ -275,31 +503,31 @@
                      data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-bgfit="cover"
                      data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                 <div class="tp-caption  sfb tp-resizeme" data-x="center"
-                     data-y="120" data-speed="700" data-start="1000" data-easing="Power0.easeInOut"
+                     data-y="50" data-speed="700" data-start="1000" data-easing="Power0.easeInOut"
                      data-splitin="words"
                      data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
                      style="z-index: 5; max-width: inherit; max-height: inherit; white-space: nowrap;color: #fff;font-size:60px;font-family: lato">
-                    小班VIP教学
+                    <!--小班VIP教学-->
                 </div>
                 <div class="tp-caption sft tp-resizeme" data-x="center"
-                     data-y="200" data-speed="700" data-start="1000" data-easing="Power0.easeInOut"
+                     data-y="130" data-speed="700" data-start="1000" data-easing="Power0.easeInOut"
                      data-splitin="words"
                      data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
                      style="z-index: 5; max-width: inherit; max-height: inherit; white-space: nowrap;color: #fff;font-size:70px;font-family: lato">
-                    提升孩子逻辑思维能力
+                   <!-- 提升孩子逻辑思维能力-->
                 </div>
 
                 <div class="hidden-xs tp-caption  sfl tp-resizeme" data-x="430"
-                     data-y="340" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"
+                     data-y="200" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"
                      data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
                      style="z-index: 5;">
-                    <a href="contact_us.html" class="slider_btn hvr-shutter-out-horizontal">电话咨询</a>
+                    <!--<a href="contact_us.html" class="slider_btn hvr-shutter-out-horizontal">电话咨询</a>-->
                 </div>
                 <div class="hidden-xs tp-caption  sfr tp-resizeme" data-x="600"
-                     data-y="340" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"
+                     data-y="270" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"
                      data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
                      style="z-index: 5">
-                    <a href="javascript:void(0)" class="slider_btn slider_btn_gifted">免费领取视听大礼包</a>
+                    <a href="javascript:void(0)" class="slider_btn slider_btn_gifted" style="border:1px black solid;background:#86CB35">免费领取视听大礼包</a>
                 </div>
                 <div class="visible-xs tp-caption  sfl tp-resizeme" data-x="350"
                      data-y="340" data-speed="1000" data-start="2000" data-easing="Power3.easeInOut"
@@ -421,7 +649,7 @@
         <div class="modal-content">
             <br>
             <div class="bs-example bs-example-tabs">
-                <ul id="myTab" class="nav nav-tabs ">
+                <ul id="myTab" class="nav nav-tabs">
                     <li id="signin_tab" class="active"><a href="#signin" data-toggle="tab">登录</a></li>
                     <li id="reg_tab"><a href="#signup" data-toggle="tab">注册</a></li>
                 </ul>
@@ -522,16 +750,16 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-sm-offset-3 m-t-50">
-            <h2 class="heading underline">教学特色</h2>
+            <h2 class="heading underline">为何学编程</h2>
             <p class="text-center">We're building a great company, and we're very excited about the
                 future of the company.</p>
         </div>
     </div>
 
-    <div class="row">
-        <!--<div class="col-sm-5">
+    <!--<div class="row">
+        &lt;!&ndash;<div class="col-sm-5">
             <img src="images/index3.png" alt="boyimg" class="img-responsive">
-        </div>-->
+        </div>&ndash;&gt;
         <div class="col-sm-12 section-top-40">
             <div class="row">
                 <div class="col-md-6">
@@ -575,7 +803,81 @@
                 </div>
             </div>
         </div>
+    </div>-->
+
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="images/index3.png" alt="boyimg" class="img-responsive">
+        </div>
+        <div class="col-sm-7 section-top-40">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about_col_space">
+                        <div class="row profile1">
+                            <div class="col-md-3 col-sm-3 col-xs-3 section-top-20">
+                                <img src="images/responsible-energy-use.png" class="img-responsive"
+                                     alt="about_icons">
+                            </div>
+
+                            <div class="profile_data col-md-9 col-sm-9 col-xs-9 section-top-20">
+                               <h5 class="profile_data">增强专注力</h5>
+                                <p class="profile_data">通过学习编程可以不断增强孩子
+                                    的专注力和细心度，让孩子在以后的学习、工作中更专注。
+                                    <br/><!--<a href="about_us.html" class="text-success">
+                                        Read more</a>-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_col_space">
+                        <div class="row profile1">
+                            <div class="col-md-3  col-xs-3 section-top-20">
+                                <img src="images/global.png" class="img-responsive" alt="about_icons">
+                            </div>
+                            <div class="profile_data col-md-9  col-xs-9 section-top-20">
+                                <h5 class="profile_data">提高学习兴趣</h5>
+                                <p class="profile_data">TreeCoder少儿编程趣味性的将学科知识融入编程，可极大的激发孩子学习兴趣，
+                                    让原本枯燥的知识生动起来
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about_col_space">
+                        <div class="row profile1">
+                            <div class="col-md-3  col-xs-3 section-top-20">
+                                <img src="images/diversity.png" class="img-responsive" alt="about_icons">
+                            </div>
+                            <div class="profile_data col-md-9  col-xs-9 section-top-20">
+                               <h5 class="profile_data">提高创新能力</h5>
+                                <p class="profile_data">编程学习让孩子学会独立思考，引导孩子创新创造，让
+                                    孩子在人工智能时代拥有更强竞争力。
+                                    <br/><!--<a href="about_us.html" class="text-success">
+                                        Read more</a>-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_col_space">
+                        <div class="row profile1">
+                            <div class="col-md-3 col-sm-3 col-xs-3 section-top-20">
+                                <img src="images/leadrship.png" class="img-responsive" alt="about_icons">
+                            </div>
+                            <div class="profile_data col-md-9 col-sm-9 col-xs-9 section-top-20">
+                                <a href="about_us.html"><h5 class="profile_data">面向未来</h5></a>
+                                <p class="profile_data">学习编程能成为科技特长生，为升学和高考加分，增加进入名校的机率。
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
 <!-------------about end----------->
 <section class="home3_countup_section parallax m-t-70">
@@ -589,19 +891,19 @@
         </div>
         <div class="row section-top-40">
             <div class="col-md-3 col-sm-6 col-xs-12  text-center text-white">
-                <span class="statics_options" id="Overseas">10+</span>
+                <span class="statics_options" id="Overseas"></span>+
                 <h4 class="text-white">全国城市覆盖</h4>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12  text-center text-white">
-                <span class="statics_options" id="Investors">120+</span>
+                <span class="statics_options" id="Investors"></span>+
                 <h4 class="text-white">经验丰富的老师</h4>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 text-center text-white">
-                <span class="statics_options" id="Client">10+</span>
+                <span class="statics_options" id="Client"></span>+
                 <h4 class="text-white">学习活动中心</h4>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 text-center text-white">
-                <span class="statics_options" id="Success">1000+ </span>
+                <span class="statics_options" id="Success"></span>+
                 <h4 class="text-white">参训儿童</h4>
             </div>
         </div>
@@ -824,8 +1126,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3 col-sm-6 m-t-50">
-            <div class="meetour_back section-bottom-pad-40">
+        <div class="col-md-3 col-sm-6">
+            <!--<div class="meetour_back section-bottom-pad-40">
                 <div class="meet_img_pad">
                     <img src="images/man5.png" alt="girlimg" class="img-responsive img-thumbnail center-block">
                 </div>
@@ -838,57 +1140,199 @@
                         原北大 NUS校园内著名技术高手</p>
 
                 </div>
-            </div>
+            </div>-->
+
+            <div class="index_box5">
+
+                <div id="demo" class="showcase ibox5_con">
+
+                    <div id="content-8" class="content mCustomScrollbar _mCS_1" style="overflow: visible;">
+
+                        <ul class="clears" style="margin:0px;padding:0px;" style="margin:0px;padding:0px">  <!--clear:设置了zoom, 否则2个图片会上下分开显示-->
+                            <li style="margin-left:0px"> <!--图上下分开-->
+                                <div class="ibox5c">
+                                    <div class="ibox5img">
+                                        <p class="ibox5tea ibox5wow"><img
+                                                src="images/teacher1.jpg"
+                                                class="mCS_img_loaded"></p>
+                                        <div class="ibox5des ibox5wow text-center">
+                                            <p>
+                                                北京大学、硕士 <br><br>
+                                                获得“新加坡-北大-牛津”</br>
+                                                研究联盟全额奖学金</br>
+                                                精通多门语言与开发框架</br>
+                                                原北大 NUS校园内著名技术高手</p>
+                                        </div>
+                                    </div>
+                                    <div class="ibox5th ibox5wow"><img
+                                            src="images/teacher1.jpg"
+                                            class="mCS_img_loaded"></div>
+                                    <div class="ibox5item ibox5wow">
+                                        <div class="ibox5fix">
+                                            <h2>秦老师</h2>
+                                        </div>
+                                    </div>
+                                    <p class="line ibox5wow"></p>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </div>  <!--box: teacher-->
         </div>
-        <div class="col-md-3 col-sm-6 m-t-50">
-            <div class="meetour_back section-bottom-pad-40">
-                <div class="meet_img_pad">
-                    <img src="images/man3.png" alt="girlimg" class="img-responsive img-thumbnail center-block">
+
+        <div class="col-md-3 col-sm-6 ">
+
+            <div class="index_box5">
+
+                <div id="demo" class="showcase ibox5_con">
+
+                    <div id="content-8" class="content mCustomScrollbar _mCS_1" style="overflow: visible;">
+
+                        <ul class="clears" style="margin:0px;padding:0px;" style="margin:0px;padding:0px">  <!--clear:设置了zoom, 否则2个图片会上下分开显示-->
+                            <li style="margin-left:0px"> <!--图上下分开-->
+                                <div class="ibox5c">
+                                    <div class="ibox5img">
+                                        <p class="ibox5tea ibox5wow"><img
+                                                src="images/teacher1.jpg"
+                                                class="mCS_img_loaded"></p>
+                                        <div class="ibox5des ibox5wow text-center">
+                                            <p>
+                                                北京大学、硕士 <br><br>
+                                                获得“新加坡-北大-牛津”</br>
+                                                研究联盟全额奖学金</br>
+                                                精通多门语言与开发框架</br>
+                                                原北大 NUS校园内著名技术高手</p>
+                                        </div>
+                                    </div>
+                                    <div class="ibox5th ibox5wow"><img
+                                            src="images/teacher1.jpg"
+                                            class="mCS_img_loaded"></div>
+                                    <div class="ibox5item ibox5wow">
+                                        <div class="ibox5fix">
+                                            <h2>秦老师</h2>
+                                            <!--<p>主讲老师</p>-->
+                                        </div>
+                                    </div>
+                                    <p class="line ibox5wow"></p>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
                 </div>
-                <div class="img_underdata text-center">
-                    <h5>秦老师</h5>
-                    <p>北京大学、硕士</p>
-                    <p>获得“新加坡-北大-牛津”</br>
-                        研究联盟全额奖学金</br>
-                        精通多门语言与开发框架</br>
-                        原北大 NUS校园内著名技术高手</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 m-t-50">
-            <div class="meetour_back section-bottom-pad-40">
-                <div class="meet_img_pad">
-                    <img src="images/woman3.png" alt="girlimg" class="img-responsive img-thumbnail center-block">
-                </div>
-                <div class="img_underdata text-center">
-                    <h5>秦老师</h5>
-                    <p>北京大学、硕士</p>
-                    <p>获得“新加坡-北大-牛津”</br>
-                        研究联盟全额奖学金</br>
-                        精通多门语言与开发框架</br>
-                        原北大 NUS校园内著名技术高手</p>
-                </div>
-            </div>
+            </div>  <!--box: teacher-->
 
         </div>
-        <div class="col-md-3  col-sm-6 m-t-50">
-            <div class="meetour_back section-bottom-pad-40 ">
-                <div class="meet_img_pad">
-                    <img src="images/man5.png" alt="girlimg" class="img-responsive img-thumbnail center-block">
+
+        <div class="col-md-3 col-sm-6">
+            <div class="index_box5">
+
+                <div id="demo" class="showcase ibox5_con">
+
+                    <div id="content-8" class="content mCustomScrollbar _mCS_1" style="overflow: visible;">
+
+                        <ul class="clears" style="margin:0px;padding:0px;" style="margin:0px;padding:0px">  <!--clear:设置了zoom, 否则2个图片会上下分开显示-->
+                            <li style="margin-left:0px"> <!--图上下分开-->
+                                <div class="ibox5c">
+                                    <div class="ibox5img">
+                                        <p class="ibox5tea ibox5wow"><img
+                                                src="images/teacher1.jpg"
+                                                class="mCS_img_loaded"></p>
+                                        <div class="ibox5des ibox5wow text-center">
+                                            <p>
+                                                北京大学、硕士 <br><br>
+                                                获得“新加坡-北大-牛津”</br>
+                                                研究联盟全额奖学金</br>
+                                                精通多门语言与开发框架</br>
+                                                原北大 NUS校园内著名技术高手</p>
+                                        </div>
+                                    </div>
+                                    <div class="ibox5th ibox5wow"><img
+                                            src="images/teacher1.jpg"
+                                            class="mCS_img_loaded"></div>
+                                    <div class="ibox5item ibox5wow">
+                                        <div class="ibox5fix">
+                                            <h2>秦老师</h2>
+                                            <!--<p>主讲老师</p>-->
+                                        </div>
+                                    </div>
+                                    <p class="line ibox5wow"></p>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
                 </div>
-                <div class="img_underdata text-center">
-                    <h5>秦老师</h5>
-                    <p>北京大学、硕士</p>
-                    <p>获得“新加坡-北大-牛津”</br>
-                        研究联盟全额奖学金</br>
-                        精通多门语言与开发框架</br>
-                        原北大 NUS校园内著名技术高手</p>
+            </div>  <!--box: teacher-->
+        </div>
+
+        <div class="col-md-3  col-sm-6">
+
+            <div class="index_box5">
+
+                <div id="demo" class="showcase ibox5_con">
+
+                    <div id="content-8" class="content mCustomScrollbar _mCS_1" style="overflow: visible;">
+
+                        <ul class="clears" style="margin:0px;padding:0px;" style="margin:0px;padding:0px">  <!--clear:设置了zoom, 否则2个图片会上下分开显示-->
+                            <li style="margin-left:0px"> <!--图上下分开-->
+                                <div class="ibox5c">
+                                    <div class="ibox5img">
+                                        <p class="ibox5tea ibox5wow"><img
+                                                src="images/teacher1.jpg"
+                                                class="mCS_img_loaded"></p>
+                                        <div class="ibox5des ibox5wow text-center">
+                                            <p>
+                                                北京大学、硕士 <br><br>
+                                                获得“新加坡-北大-牛津”</br>
+                                                研究联盟全额奖学金</br>
+                                                精通多门语言与开发框架</br>
+                                                原北大 NUS校园内著名技术高手</p>
+                                        </div>
+                                    </div>
+                                    <div class="ibox5th ibox5wow"><img
+                                            src="images/teacher1.jpg"
+                                            class="mCS_img_loaded"></div>
+                                    <div class="ibox5item ibox5wow">
+                                        <div class="ibox5fix">
+                                            <h2>秦老师</h2>
+                                            <!--<p>主讲老师</p>-->
+                                        </div>
+                                    </div>
+                                    <p class="line ibox5wow"></p>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
                 </div>
-            </div>
+            </div>  <!--box: teacher-->
+
 
         </div>
-    </div>
-</div>
+
+
+        </div> <!--row-->
+
+    </div> <!--container--->
+
+
+
+
 
 <!-------------Meet Our Team End--------->
 <section class="section-top-25" style="
@@ -1009,7 +1453,7 @@
                     <div class="row pricing_border_success">
                         <div class="col-xs-12 text-center pricing_expert">
                             <h5 class="text-white"><NOIP></NOIP>
-                                算法编程</h5>
+                                NOIP算法编程</h5>
                         </div>
                         <div class="col-xs-12 bg-success pricing_price" style="background:url(images/scratch1809.png)  no-repeat center;background-size:100%;">
                             <div class="m-t-50 price">
@@ -1066,7 +1510,8 @@
                     <!--右-->
                     <div class="col-md-6">
                         <h5>小鱼问答</h5>
-                        <hr/>
+                        <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
+                        <!--<hr/>-->
                         <p>案例中用到了Scratch的“朗读”、“问答”功能积木代码
                             让小鱼可以判断输入答案的对错
                             苹果数量的变化是随机的，用到了数学中“随机数”的概念 </p>
@@ -1092,7 +1537,8 @@
                     <!--右-->
                     <div class="col-md-6">
                         <h5>小鱼问答</h5>
-                        <hr/>
+                        <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
+                        <!--<hr/>-->
                         <p>案例中用到了Scratch的“朗读”、“问答”功能积木代码
                             让小鱼可以判断输入答案的对错
                             苹果数量的变化是随机的，用到了数学中“随机数”的概念 </p>
@@ -1118,7 +1564,8 @@
                     </div>
                     <div class="col-md-6">
                         <h5>小鱼问答</h5>
-                        <hr/>
+                        <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
+                        <!--<hr/>-->
                         <p>案例中用到了Scratch的“朗读”、“问答”功能积木代码
                             让小鱼可以判断输入答案的对错
                             苹果数量的变化是随机的，用到了数学中“随机数”的概念 </p>
@@ -1142,7 +1589,8 @@
                     </div>
                     <div class="col-md-6">
                         <h5>小鱼问答</h5>
-                        <hr/>
+                        <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
+                        <!--<hr/>-->
                         <p>案例中用到了Scratch的“朗读”、“问答”功能积木代码
                             让小鱼可以判断输入答案的对错
                             苹果数量的变化是随机的，用到了数学中“随机数”的概念 </p>
@@ -1178,12 +1626,34 @@
                         </div>-->
 
                         <div class="col-xs-12">
-                            <span class="foot_icon">
-                            <a href="#"> <i class="icon-font i-qq-border fa section-top-10 footer_social_icons"></i></a>
-                            <a href="#"> <i class="icon-font i-weixin-border fa section-top-10 footer_social_icons"></i></a>
-                            <a href="#"> <i class="icon-font i-phone fa section-top-10 footer_social_icons"></i></a>
+                            <span class="foot_icon" style="margin:0px;padding:0px">
+                                <!--<a href="#"> <i class="icon-font i-qq-border fa section-top-10 footer_social_icons"></i></a>
+                                <a href="#"> <i class="icon-font i-weixin-border fa section-top-10 footer_social_icons"></i></a>
+                                <a href="#"> <i class="icon-font i-phone fa section-top-10 footer_social_icons"></i></a>-->
 
-                        </span>
+                                <ul class="contact-us-im">
+                                    <li style="float:left;">
+                                        <a href="tencent://message/?uin=745636944&Menu-=yes"> <i class="icon-font i-qq-border fa section-top-10 footer_social_icons"></i></a>
+                                    </li>
+                                    <li style="float:left">
+                                        <a href="#"> <i class="icon-font i-weixin-border fa section-top-10 footer_social_icons"></i></a>
+                                        <ul>
+                                                <li>
+                                                    <img src="images/wechat_code.jpg"/>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li style="float:left">
+                                        <a href="#"> <i class="icon-font i-phone fa section-top-10 footer_social_icons"></i></a>
+                                        <ul>
+                                                <li>
+                                                    <p>13813726471</p>
+                                                </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </span>
                         </div>
 
                     </div>
@@ -1195,19 +1665,19 @@
                             <h4 class="text-white">关于我们</h4>
                             <hr/>
                         </div>
-                        <div class="footer_contact">
+                        <div class="footer_contact text-white">
                             <div class="col-md-12  col-xs-12">TreeCoder</div>
                         </div>
                         <div class="clearfix visible-xs-block visible-sm-block visible-lg-block visible-md-block"></div>
                         <div class="footer_contact">
-                            <div class="col-md-12  col-xs-12">地址：南通世纪中南城</div>
+                            <div class="col-md-12  col-xs-12 text-white">地址：南通世纪中南城</div>
                         </div>
                         <div class="clearfix visible-xs-block visible-sm-block visible-lg-block visible-md-block"></div>
                         <div class="footer_contact">
-                            <div class="col-md-12  col-xs-12">电话：</div>
+                            <div class="col-md-12  col-xs-12 text-white">电话：</div>
                         </div>
                         <div class="footer_contact">
-                            <div class="col-md-12  col-xs-12">邮箱：</div>
+                            <div class="col-md-12  col-xs-12 text-white">邮箱：</div>
                         </div>
                     </div>
                 </div>
@@ -1220,16 +1690,16 @@
                                     <!--<li class="ea-others-a"><a rel="nofollow" href="http://kids.codepku.com">编程少年</a></li>
                                     <li class="ea-others-a"><a rel="nofollow" href="http://scratch.codepku.com">Scratch网站</a></li>
                                     <li class="ea-others-a"><a href="http://www.91goodschool.com/">合作伙伴：好学校</a></li>-->
-                                <a rel="nofollow" href="http://kids.codepku.com">编程少年</a> <br>
-                                <a rel="nofollow" href="http://scratch.codepku.com">Scratch网站</a> <br>
-                                <a href="http://www.91goodschool.com/">合作伙伴：好学校</a> <br>
+                                <a rel="nofollow" href="" class="text-white">编程少年</a> <br>
+                                <a rel="nofollow" href="" class="text-white">Scratch网站</a> <br>
+                                <a href="http://www.91goodschool.com/" class="text-white">合作伙伴：好学校</a> <br>
                                 <img
                                         src="images/wechat_code.jpg"
                                         alt="编程少年的二维码我没有源文件"
                                         class="cell-others-img"
                                         style="margin-top:12px">
                                 <!--<p class="qrcode_title" style="color: #999999;text-align:center;margin-top: 20px">扫描免费领取价值千元试听课</p>-->
-                                <p class="qrcode_title" style="color: #999999;margin-top: 20px">扫描免费领取价值千元试听课</p>
+                                <p class="qrcode_title" style="color: #ffffff;margin-top: 20px">扫描免费领取价值千元试听课</p>
                             </div>
                         </div>
                     </div>
@@ -1456,9 +1926,26 @@
 <script src="vendors/countup/js/countUp.min.js"></script>
 <script src="vendors/sweetalert2/js/sweetalert2.min.js"></script>
 <script src="vendors/jribbble/js/jribbble.min.js"></script>
+
 <!----------------------page Level Js-------------------------->
 <script src="js/custom.js"></script>
 
+
+<script type="text/javascript">
+   /* $(function (){
+        $("[data-toggle='popover']").popover();
+    });*/
+
+    $(function(){
+
+        $(".contact-us-im li a").hover(function(){
+
+            $(this).next().show();
+        }, function(){
+            $(this).next().hide();
+        });
+    });
+</script>
 
 <script type="text/javascript">
 
@@ -1521,6 +2008,8 @@
 
 
 </script>
+
+
 
 </body>
 </html>

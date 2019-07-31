@@ -8,12 +8,51 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendors/wow/css/animate.css">
-    <link rel="stylesheet" href="vendors/animate/animate.min.css">
+    <link rel="stylesheet" href="vendors/revolution-slider/css/layers.css">
+    <link rel="stylesheet" href="vendors/revolution-slider/css/navigation.css">
+    <link rel="stylesheet" href="vendors/revolution-slider/css/settings.css">
     <link rel="stylesheet" href="vendors/imagehover/css/imagehover.min.css">
+    <link rel="stylesheet" href="vendors/animate/animate.min.css">
+    <link rel="stylesheet" href="vendors/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="vendors/iCheck/css/all.css">
+    <link rel="stylesheet" href="vendors/iCheck/css/all.css">
+    <link rel="stylesheet" href="css/iconfont-embedded.css">
+    <link rel="stylesheet" href="css/CustomScrollbar.css">
+
+
     <!-------------------custom css-------------------->
     <link rel="stylesheet" href="css/custom.css">
+
+    <style type="text/css">
+        /*彩虹线*/
+        .bottom_style_list {
+            margin-top:-15px;
+            margin-bottom:-3px;
+            padding:0px;
+            width: 100%;
+            text-align: left;
+        }
+        .bottom_style_list .frist_yellow {
+            display: inline-block;
+            width: 40px;
+            height: 3px;
+            background-color: #ffd400;
+        }
+        .bottom_style_list .second_bule {
+            display: inline-block;
+            width: 70px;
+            height: 3px;
+            background-color: #2284f1;
+            margin: 0 5px;
+        }
+
+        .bottom_style_list .third_red {
+            display: inline-block;
+            width: 40px;
+            height: 3px;
+            background-color: #ff3838;
+        }
+    </style>
 </head>
 <body>
 <!------------------Preloader-------------------->
@@ -86,6 +125,29 @@
         </nav>
     </div>
 </header>
+
+<!-------------------Banner begin----------------->
+<section>
+    <div class="blog_banner" style="background-image: url('images/blog_background.png'); height:360px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 section-top-25">
+                    <h2 class="text-white text-center heading2 underline2">科学的课程体系 </h2>
+                    <p class="text-white text-justify section-top-25">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Corporate describes
+                        team conversation service Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                    <p class="text-center"><a href="blog_single_post.html"
+                                              class="btn btn-danger btn-md section-top-align">免费试听</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------Banner end----------------->
+
 <!--Login And Register Modal-->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-sm">
@@ -189,171 +251,39 @@
     </div>
 </div>
 <!--Login And Register Modal-->
-<!----------------Our Services Section---------->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 m-t-50">
-            <h2 class="heading underline">Our Services</h2>
-            <p class="text-center">We're building a great company, and we're very excited about the future of the
-                company.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/big-data.png" alt="bigdata" class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>Big Data</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore etdolore magna aliqua..</p>
-                    <a href="service_detailed.html" class="text-success">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/coding.png" alt="bigdata" class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>Web Development</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore etdolore magna aliqua..</p>
-                    <a href="service_detailed.html" class="text-success">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/cloud-computing.png" alt="bigdata"
-                         class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>Cloud Solutions</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore etdolore magna aliqua..</p>
-                    <a href="service_detailed.html" class="text-success">View Details</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/light-bulb.png" alt="bigdata" class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>Guaranteed Quality</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore etdolore magna aliqua..</p>
-                    <a href="service_detailed.html" class="text-success">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/shovel.png" alt="bigdata" class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>Site Construction</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore etdolore magna aliqua..</p>
-                    <a href="service_detailed.html" class="text-success">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/construction-excavator.png" alt="bigdata"
-                         class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>Construction Activities</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore etdolore magna aliqua..</p>
-                    <a href="service_detailed.html" class="text-success">View Details</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!----------------Our Services Section End---------->
-<!-------------CountUp------------->
-<section class="home3_countup_section  m-t-70 parallax">
-    <div class="container">
-        <div class="row m-t-70">
-            <div class="col-md-3 col-sm-6  text-center text-white">
-                <span class="countup_options" id="Overseas">50</span>
-                <h4 class="text-white">Overseas Operation</h4>
-            </div>
-            <div class="col-md-3 col-sm-6  text-center text-white">
-                <span class="countup_options" id="Investors">1200</span>
-                <h4 class="text-white">Investors</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center text-white">
-                <span class="countup_options" id="Client">400</span>
-                <h4 class="text-white">Client Support</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center text-white section-bottom-pad-40">
-                <span class="countup_options" id="Success">98</span><span class="countup_options">%</span>
-                <h4 class="text-white">Success Rate</h4>
-            </div>
-        </div>
-    </div>
-    <br/>
-</section>
-<!-------------CountUp End------------->
 
-<!----------------Our Projects section------------->
-<div class="container">
+<!----------------Our lecture section------------->
+<!--<div class="container">
     <div class="row">
         <div class="col-sm-6  col-sm-offset-3 m-t-50">
-            <h2 class="heading underline text-center">Our Projects</h2>
+            <h2 class="heading underline text-center">我们的课程</h2>
             <p class="text-center">We're building a great company, and we're very excited about the future of the
                 company.</p>
         </div>
     </div>
+
+    &lt;!&ndash;课程类型&ndash;&gt;
     <div class="row">
         <div class=" col-xs-12">
-
-
             <div id="filters" class=" section-top-25">
                 <ul class="nav nav-pills">
-                    <li data-filter="*"><a href="javascript:void(0)" class="section-top-align active1 ">All</a></li>
-                    <li data-filter=".awards"><a href="javascript:void(0)" class="section-top-align">Mobile
-                        Development</a></li>
-                    <li data-filter=".clients"><a href="javascript:void(0)" class="section-top-align">Automation</a>
+                    <li data-filter=".scratch"><a href="javascript:void(0)" class="section-top-align active1 ">Scratch图形化编程</a></li>
+                    <li data-filter=".ardruino"><a href="javascript:void(0)" class="section-top-align">Arduino 硬件编程</a></li>
+                    <li data-filter=".python"><a href="javascript:void(0)" class="section-top-align">Python 代码编程</a>
                     </li>
-                    <li data-filter=".products"><a href="javascript:void(0)" class="section-top-align">Web
-                        Development</a></li>
+                    <li data-filter=".noip"><a href="javascript:void(0)" class="section-top-align">算法编程</a></li>
                 </ul>
             </div>
         </div>
     </div>
+
+    &lt;!&ndash;课程介绍&ndash;&gt;
     <div id="portfolio" class="row no-gutter section-top-25">
-        <div class="isotope-item awards col-sm-6 col-md-4 section-top-25">
+        <div class="isotope-item scratch col-sm-6 col-md-6 section-top-25">
             <div class="row">
                 <div class="col-xs-12">
                     <figure class="imghvr-slide-up img-responsive">
-                        <img src="images/portfolio1.jpg" alt="gallery3">
+                        <img src="images/lecture-scratch-l.jpg" alt="gallery3" style="width:506px;height:573px">
                         <figcaption>
                             <div class="text-center hoveicon_plus">
                                 <a href="#"><i class="fa fa-plus-circle fa-2x text-white" aria-hidden="true"></i></a>
@@ -363,11 +293,12 @@
                 </div>
             </div>
         </div>
-        <div class="isotope-item products col-sm-6 col-md-4 section-top-25">
+
+        <div class="isotope-item ardruino col-sm-6 col-md-6 section-top-25">
             <div class="row">
                 <div class="col-xs-12">
                     <figure class="imghvr-slide-up img-responsive">
-                        <img src="images/newsroom3.jpg" alt="gallery3">
+                        <img src="images/lecture-scratch-l.jpg" alt="gallery3" style="width:506px;height:573px">
                         <figcaption>
                             <div class="text-center hoveicon_plus">
                                 <a href="#"><i class="fa fa-plus-circle fa-2x text-white" aria-hidden="true"></i></a>
@@ -377,12 +308,30 @@
                 </div>
             </div>
         </div>
+
+        <div class="isotope-item noip col-sm-6 col-md-6 section-top-25">
+            <div class="row">
+                <div class="col-xs-12">
+                    <figure class="imghvr-slide-up img-responsive">
+                        <img src="images/lecture-scratch-l.jpg" alt="gallery3">
+                        <figcaption>
+                            <div class="text-center hoveicon_plus">
+                                <a href="#"><i class="fa fa-plus-circle fa-2x text-white" aria-hidden="true"></i></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
         <div class="clearfix visible-md-block visible-xs-block visible-lg-block"></div>
-        <div class="isotope-item clients col-sm-6 col-md-4 section-top-25 ">
+
+
+        <div class="isotope-item python col-sm-6 col-md-6 section-top-25 ">
             <div class="row">
                 <div class="col-xs-12">
                     <figure class="imghvr-slide-up img-responsive">
-                        <img src="images/portfolio6.jpeg" alt="gallery3">
+                        <img src="images/lecture-scratch-l.jpg" alt="gallery3">
                         <figcaption>
                             <div class="text-center hoveicon_plus">
                                 <a href="#"><i class="fa fa-plus-circle fa-2x text-white" aria-hidden="true"></i></a>
@@ -392,12 +341,14 @@
                 </div>
             </div>
         </div>
+
         <div class="clearfix visible-sm-block "></div>
-        <div class="isotope-item clients col-sm-6 col-md-4 section-top-25">
-            <div class="row   ">
+
+        <div class="isotope-item python col-sm-6 col-md-6 section-top-25">
+            <div class="row">
                 <div class="col-xs-12">
                     <figure class="imghvr-slide-up img-responsive">
-                        <img src="images/portfolio5.jpg" alt="gallery3">
+                        <img src="images/lecture-scratch-r.jpg" alt="gallery3">
                         <figcaption>
                             <div class="text-center hoveicon_plus">
                                 <a href="#"><i class="fa fa-plus-circle fa-2x text-white" aria-hidden="true"></i></a>
@@ -407,11 +358,12 @@
                 </div>
             </div>
         </div>
-        <div class="isotope-item awards col-sm-6 col-md-4 section-top-25">
+
+        <div class="isotope-item ardruino col-sm-6 col-md-6 section-top-25">
             <div class="row ">
                 <div class="col-xs-12  ">
                     <figure class="imghvr-slide-up img-responsive">
-                        <img src="images/portfolio7.jpg" alt="gallery3">
+                        <img src="images/lecture-scratch-r.jpg" alt="gallery3" style="width:723px;height:573px">
                         <figcaption>
                             <div class="text-center hoveicon_plus">
                                 <a href="#"><i class="fa fa-plus-circle fa-2x text-white" aria-hidden="true"></i></a>
@@ -421,12 +373,14 @@
                 </div>
             </div>
         </div>
+
         <div class="clearfix visible-md-block visible-xs-block visible-lg-block"></div>
-        <div class="isotope-item products col-sm-6 col-md-4 section-top-25">
+
+        <div class="isotope-item noip col-sm-6 col-md-6 section-top-25">
             <div class="row">
                 <div class="col-xs-12  ">
                     <figure class="imghvr-slide-up img-responsive">
-                        <img src="images/portfolio1.jpg" alt="gallery3">
+                        <img src="images/lecture-scratch-r.jpg" alt="gallery3">
                         <figcaption>
                             <div class="text-center hoveicon_plus">
                                 <a href="#"><i class="fa fa-plus-circle fa-2x text-white" aria-hidden="true"></i></a>
@@ -436,39 +390,31 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!----------------Our Projects section End------------->
 
-<!-------------------Subscribe Section----------->
-<section class="subscribe_section parallax m-t-70">
-    <div class="container m-t-50">
-        <div class="row section-top-25">
-            <div class="col-sm-7 col-md-6 col-xs-12 section-top-10">
-                <h3 class="text-white m-t-70">Subscribe To Our Newsletter</h3>
-            </div>
-            <div class="col-sm-5 col-md-6 m-t-50 section-bottom-pad-40  input_transparent">
-                <br/>
-                <form action="subscribe.php" method="post" id="subscribe" autocomplete="off">
-                    <div class="input-group sub_input">
-                        <input type="email" name="email" id="email" class="form-control email"
-                               placeholder="Your Email Address" aria-describedby="email" required/>
-                        <span class="input-group-addon"><button type="submit" class="subscribe_btn"><i
-                                class="fa fa-paper-plane text-white" aria-hidden="true"></i></button></span>
-                    </div>
-                </form>
-                <br/>
+        <div class="isotope-item scratch col-sm-6 col-md-6 section-top-25">
+            <div class="row">
+                <div class="col-xs-12">
+                    <figure class="imghvr-slide-up img-responsive">
+                        <img src="images/lecture-scratch-r.jpg" alt="gallery3" style="width:506px;height:573px">
+                        <figcaption>
+                            <div class="text-center hoveicon_plus">
+                                <a href="#"><i class="fa fa-plus-circle fa-2x text-white" aria-hidden="true"></i></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
+
     </div>
-    <br/>
-</section>
-<!-----------------Subscribe section End-------->
-<!--------------Pricing Table Section------->
+</div>-->
+<!----------------Our lecture section End------------->
+
+<!--------------课程体系2 begin------->
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-sm-offset-3 m-t-50 text-center">
-            <h2 class="heading underline">Pricing Table</h2>
+            <h2 class="heading underline">我们的课程</h2>
             <p class="text-center">If we look at pricing holistically, we'll create a more solid business.</p>
         </div>
     </div>
@@ -477,27 +423,30 @@
             <div class="pricing_box">
                 <div class="row  pricing_border_danger">
                     <div class="col-xs-12 text-center pricing_basic">
-                        <h5 class="text-white">Basic</h5>
+                        <h5 class="text-white">Scratch图形化编程</h5>
                     </div>
-                    <div class="col-xs-12 bg-danger pricing_price">
-                        <div class="m-t-50 price">
-                            <h2 class="text-white">$9</h2>
-                            <h6 class="text-white">Per Month</h6>
+
+                    <div class="col-xs-12 bg-danger pricing_price" style="height:auto">
+                        <div class="m-t-20 price">
+                            <h5 class="text-white">三年级</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 section-top-25">
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Monthly Subscription
+                        <p>通过动画场景设计，以游戏过关的方式，从感知、分析、描述、分解、构建、总结等几个环节来引导孩子完成有一定逻辑复杂度的程序。</p>
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            培养孩子基本的编程思维，以及用逻辑思维分析问题、解决问题的能力
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Display Advertising
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            提升孩子的专注力以及创造力
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Multiple Administrators
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            激发孩子对编程语言的兴趣
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Enable Rss Feeds
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            显著提升孩子的逻辑思维能力和表达能力
                         </p>
                     </div>
-                    <div class="col-xs-12 text-center bg-danger section-top-25">
-                        <a class="btn btn-empty section-bottom-15 section-top-15">Get Started</a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -505,26 +454,27 @@
             <div class="pricing_box">
                 <div class="row pricing_border_warning">
                     <div class="col-xs-12 text-center pricing_intermediate">
-                        <h5 class="text-white">Intermediate</h5>
+                        <h5 class="text-white">Arduino 硬件编程</h5>
                     </div>
-                    <div class="col-xs-12 bg-warning pricing_price">
-                        <div class="m-t-50 price">
-                            <h2 class="text-white">$29</h2>
-                            <h6 class="text-white">Per Month</h6>
+                    <div class="col-xs-12 bg-warning pricing_price" style="height:auto">
+                        <div class="m-t-20 price">
+                            <h5 class="text-white">四年级</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 section-top-25">
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Monthly Subscription
+                        <p>通过动画场景设计，以游戏过关的方式，从感知、分析、描述、分解、构建、总结等几个环节来引导孩子完成有一定逻辑复杂度的程序。</p>
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            培养孩子基本的编程思维，以及用逻辑思维分析问题、解决问题的能力
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Display Advertising
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            提升孩子的专注力以及创造力
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Multiple Administrators
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            激发孩子对编程语言的兴趣
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Enable Rss Feeds
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            显著提升孩子的逻辑思维能力和表达能力
                         </p>
-                    </div>
-                    <div class="col-xs-12 text-center bg-warning section-top-25">
-                        <a class="btn btn-empty section-bottom-15 section-top-15">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -533,26 +483,27 @@
             <div class="pricing_box">
                 <div class="row pricing_border_primary">
                     <div class="col-xs-12 text-center pricing_advanced">
-                        <h5 class="text-white">Advanced</h5>
+                        <h5 class="text-white">Python 代码编程</h5>
                     </div>
-                    <div class="col-xs-12 bg-primary pricing_price">
-                        <div class="m-t-50 price">
-                            <h2 class="text-white">$49</h2>
-                            <h6 class="text-white">Per Month</h6>
+                    <div class="col-xs-12 bg-primary pricing_price" style="height:auto">
+                        <div class="m-t-20 price">
+                            <h5 class="text-white">五年级</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 section-top-25">
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Monthly Subscription
+                        <p>通过动画场景设计，以游戏过关的方式，从感知、分析、描述、分解、构建、总结等几个环节来引导孩子完成有一定逻辑复杂度的程序。</p>
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            培养孩子基本的编程思维，以及用逻辑思维分析问题、解决问题的能力
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Display Advertising
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            提升孩子的专注力以及创造力
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Multiple Administrators
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            激发孩子对编程语言的兴趣
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Enable Rss Feeds
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            显著提升孩子的逻辑思维能力和表达能力
                         </p>
-                    </div>
-                    <div class="col-xs-12 text-center bg-primary section-top-25">
-                        <a class="btn btn-empty section-bottom-15 section-top-15">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -561,33 +512,240 @@
             <div class="pricing_box">
                 <div class="row pricing_border_success">
                     <div class="col-xs-12 text-center pricing_expert">
-                        <h5 class="text-white">Expert</h5>
+                        <h5 class="text-white">NOIP算法编程</h5>
                     </div>
-                    <div class="col-xs-12 bg-success pricing_price">
-                        <div class="m-t-50 price">
-                            <h2 class="text-white">$99</h2>
-                            <h6 class="text-white">Per Month</h6>
+                    <div class="col-xs-12 bg-success pricing_price" style="height:auto">
+                        <div class="m-t-20 price">
+                            <h5 class="text-white">六年级</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 section-top-25">
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Monthly Subscription
+                        <p>通过动画场景设计，以游戏过关的方式，从感知、分析、描述、分解、构建、总结等几个环节来引导孩子完成有一定逻辑复杂度的程序。</p>
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            培养孩子基本的编程思维，以及用逻辑思维分析问题、解决问题的能力
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Display Advertising
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            提升孩子的专注力以及创造力
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Multiple Administrators
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            激发孩子对编程语言的兴趣
                         </p>
-                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp; Enable Rss Feeds
+                        <p><i class="fa fa-check text-success" aria-hidden="true"></i>&nbsp;
+                            显著提升孩子的逻辑思维能力和表达能力
                         </p>
-                    </div>
-                    <div class="col-xs-12 text-center bg-success section-top-25">
-                        <a class="btn btn-empty section-bottom-15 section-top-15">Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--------------Pricing Table Section End------->
+<!--------------课程体系2 End------->
+
+
+
+<div class="container">
+    <div class="row wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+        <div class="col-sm-6 col-sm-offset-3 m-t-50">
+            <h2 class="heading underline">课程内容</h2>
+            <p class="text-center">
+                Sed ut perspiciatis unde omnis iste natus error sitvoluptatem accusantium doloremque
+                laudantium.
+            </p>
+        </div>
+    </div>
+
+
+        <div class="row bg-default">
+            <div class="col-md-12 section-top-30">
+                <h4 style="color:#EF4242">Scratch图形化编程</h4>
+                <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
+            </div>
+        </div>
+
+        <div class="row bg-default">
+            <div class="col-md-4">
+                <div class="swiper-container Products_page_swiper section-top-align">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/mobile1.jpg" class="img-responsive" alt="image-missing">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/android1.jpg" class="img-responsive" alt="image-missing">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/productsswipperimg.jpg" class="img-responsive" alt="image-missing">
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <p class="text-justify section-top-10 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    Scratch是麻省理工学院的“终身幼儿园团队”开发的图形化编程工具。</p>
+                <p class="text-justify wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    不仅易于孩子们使用，又能寓教于乐，让孩子们获得创作中的乐趣。
+
+                </p>
+            </div>
+            <div class="col-md-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                <h4 style="color:#E2720E">Level1</h4>
+                <p class="text-justify section-top-10"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 丰富有趣的故事，浅显易懂的讲解，从零开始轻松入门Scratch3.0编程。学会创作动画、音乐、美术、游戏等作品。
+                <a href="#" class="text-success">了解更多</a>
+                </p>
+                <h4 class="section-top-25" style="color:#E2720E">Level2</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 跟随玩仔和周周进入代码世界去冒险，学习事件、循环、变量、逻辑判断等基本的计算机程序设计方面的知识。
+                <a href="#" class="text-success">了解更多</a>
+                </p>
+            </div>
+            <div class="col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                <h4 style="color:#E2720E">Level3</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p> 踏上寻找十二神兽之旅，解锁克隆、列表、函数等高级的技能，学习游戏设计的思想，激发学生无穷的创意。
+                <a href="#" class="text-success">了解更多</a>
+                </p>
+                <h4 class="section-top-25" style="color:#E2720E">Level4</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify">将Scratch和Picoboard相结合，利用各种传感器做出生动有趣的游戏。如水果电阻、植物大战僵尸、声控版碰碰车。
+                <a href="#" class="text-success">了解更多</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4 style="color:#DA9002">Arduino 硬件编程</h4>
+                <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 section-top-25 image_alignment">
+                <div class="zoom thumb_zoom">
+                <img src="images/webdevelopment1.jpg" class="img-responsive" alt="it_service _image">
+            </div>
+                <p class="text-justify section-top-25">
+                    Scratch是麻省理工学院的“终身幼儿园团队”开发的图形化编程工具。</p>
+                <p class="text-justify"> 不仅易于孩子们使用，又能寓教于乐，让孩子们获得创作中的乐趣。
+                </p>
+            </div>
+            <div class="section-top-10 col-md-4">
+                <h4 style="color:#E2720E">Level1</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 丰富有趣的故事，浅显易懂的讲解，从零开始轻松入门Scratch3.0编程。学会创作动画、音乐、美术、游戏等作品。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+                <h4 class="section-top-25" style="color:#E2720E">Level2</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 跟随玩仔和周周进入代码世界去冒险，学习事件、循环、变量、逻辑判断等基本的计算机程序设计方面的知识。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+            </div>
+            <div class="section-top-10 col-md-4">
+                <h4 style="color:#E2720E">Level3</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 踏上寻找十二神兽之旅，解锁克隆、列表、函数等高级的技能，学习游戏设计的思想，激发学生无穷的创意。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+                <h4 class="section-top-25" style="color:#E2720E">Level4</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 将Scratch和Picoboard相结合，利用各种传感器做出生动有趣的游戏。如水果电阻、植物大战僵尸、声控版碰碰车。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="row bg-default">
+            <div class="col-md-12">
+                <h4 style="color:#0569AB">Python 代码编程</h4>
+                <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
+            </div>
+        </div>
+        <div class="row bg-default">
+            <div class="col-md-4 section-top-25 image_alignment">
+                <div class="zoom thumb_zoom">
+                    <img src="images/webdevelopment1.jpg" class="img-responsive" alt="it_service _image">
+                </div>
+                <p class="text-justify section-top-25">
+                    Scratch是麻省理工学院的“终身幼儿园团队”开发的图形化编程工具。</p>
+                <p class="text-justify"> 不仅易于孩子们使用，又能寓教于乐，让孩子们获得创作中的乐趣。
+                </p>
+            </div>
+            <div class="section-top-10 col-md-4">
+                <h4 style="color:#E2720E">Level1</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 丰富有趣的故事，浅显易懂的讲解，从零开始轻松入门Scratch3.0编程。学会创作动画、音乐、美术、游戏等作品。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+                <h4 class="section-top-25" style="color:#E2720E">Level2</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 跟随玩仔和周周进入代码世界去冒险，学习事件、循环、变量、逻辑判断等基本的计算机程序设计方面的知识。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+            </div>
+            <div class="section-top-10 col-md-4">
+                <h4 style="color:#E2720E">Level3</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 踏上寻找十二神兽之旅，解锁克隆、列表、函数等高级的技能，学习游戏设计的思想，激发学生无穷的创意。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+                <h4 class="section-top-25" style="color:#E2720E">Level4</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 将Scratch和Picoboard相结合，利用各种传感器做出生动有趣的游戏。如水果电阻、植物大战僵尸、声控版碰碰车。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4 style="color:#6FBD11">NOIP算法编程</h4>
+                <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 section-top-25 image_alignment">
+                <div class="zoom thumb_zoom">
+                    <img src="images/webdevelopment1.jpg" class="img-responsive" alt="it_service _image">
+                </div>
+                <p class="text-justify section-top-25">
+                    Scratch是麻省理工学院的“终身幼儿园团队”开发的图形化编程工具。</p>
+                <p class="text-justify"> 不仅易于孩子们使用，又能寓教于乐，让孩子们获得创作中的乐趣。
+                </p>
+            </div>
+            <div class="section-top-10 col-md-4">
+                <h4 style="color:#E2720E">Level1</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 丰富有趣的故事，浅显易懂的讲解，从零开始轻松入门Scratch3.0编程。学会创作动画、音乐、美术、游戏等作品。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+                <h4 class="section-top-25" style="color:#E2720E">Level2</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 跟随玩仔和周周进入代码世界去冒险，学习事件、循环、变量、逻辑判断等基本的计算机程序设计方面的知识。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+            </div>
+            <div class="section-top-10 col-md-4">
+                <h4 style="color:#E2720E">Level3</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 踏上寻找十二神兽之旅，解锁克隆、列表、函数等高级的技能，学习游戏设计的思想，激发学生无穷的创意。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+                <h4 class="section-top-25" style="color:#E2720E">Level4</h4>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
+                <p class="text-justify"> 将Scratch和Picoboard相结合，利用各种传感器做出生动有趣的游戏。如水果电阻、植物大战僵尸、声控版碰碰车。
+                    <a href="#" class="text-success">了解更多</a>
+                </p>
+            </div>
+        </div>
+
+    <!--</div>-->
+</div>
+
+
 <!--------------Footer Start----------------->
 
 <!------------Footer Caret Shape------------>
@@ -710,10 +868,13 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="vendors/wow/js/wow.min.js"></script>
+<script src="vendors/swiper/js/swiper.jquery.min.js"></script>
 <script src="vendors/iCheck/js/icheck.js"></script>
 <script src="vendors/isotope/js/isotope.pkgd.min.js"></script>
 <script src="vendors/jribbble/js/jribbble.min.js"></script>
 <script src="vendors/countup/js/countUp.min.js"></script>
+<script src="vendors/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+<script src="vendors/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
 <!----------------Page Level JS-------------------->
 <script src="js/custom.js"></script>
 </body>

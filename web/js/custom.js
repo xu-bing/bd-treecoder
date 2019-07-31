@@ -635,13 +635,13 @@ $(document).ready(function () {
 
     /*------------Twitter feed------------------*/
 
-    $('.tweet').twittie({
+    /*$('.tweet').twittie({
         dateFormat: '%b. %d, %Y',
         template: '<i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;{{tweet}} <div class="date">{{date}}</div><br />',
         count: 2,
         hideReplies: true,
         apiPath: 'twitter_api/tweet.php'
-    });
+    });*/
 
     /*--------------maps--------------------------*/
     if ($.fn.gmap3 !== undefined) {
@@ -874,10 +874,10 @@ $(document).ready(function () {
         };
         /*-------------Index---------------*/
         if ($("#Overseas")[0]) {
-            var demo4 = new CountUp("Success", 0, 97, 0, 7, options);
-            var demo3 = new CountUp("Client", 0, 1400, 0, 7, options);
-            var demo2 = new CountUp("Investors", 0, 1600, 0, 7, options);
-            var demo1 = new CountUp("Overseas", 0, 56, 0, 7, options);
+            var demo4 = new CountUp("Success", 0, 1230, 0, 7, options);
+            var demo3 = new CountUp("Client", 0, 11, 0, 7, options);
+            var demo2 = new CountUp("Investors", 0, 120, 0, 7, options);
+            var demo1 = new CountUp("Overseas", 0, 10, 0, 7, options);
             $(window).on('scroll', function () {
                 var winTop = $(window).scrollTop();
                 var winHeight = $(window).height();
