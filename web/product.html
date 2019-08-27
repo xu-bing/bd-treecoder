@@ -3,26 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <title>关于我们</title>
+    <title>作品展示</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <!-----------------Global css------------------>
+    <!-------------Global css-------------->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendors/animate/animate.min.css">
-    <link rel="stylesheet" href="vendors/imagehover/css/imagehover.min.css">
+    <link rel="stylesheet" href="vendors/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/owlcarousel/css/owl.theme.green.min.css">
+    <link rel="stylesheet" href="vendors/wow/css/animate.css">
+    <link rel="stylesheet" href="vendors/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="vendors/iCheck/css/all.css">
-    <link rel="stylesheet" href="vendors/circliful/css/jquery.circliful.css">
-    <link rel="stylesheet" href="vendors/sweetalert2/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="vendors/revolution-slider/css/layers.css">
+    <link rel="stylesheet" href="vendors/revolution-slider/css/navigation.css">
+    <link rel="stylesheet" href="vendors/revolution-slider/css/settings.css">
     <!--header左侧：im-->
     <link rel="stylesheet" href="css/iconfont-embedded.css">
-    <!-------------------custom css-------------------->
+    <!--------------custom css------------->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/custom-boode.css">
 
+    <style type="text/css">
+        /*彩虹线*/
+        .bottom_style_list {
+            margin-top:-15px;padding:0px;
+            width: 100%;
+            text-align: center;
+        }
+        .bottom_style_list .frist_yellow {
+            display: inline-block;
+            width: 70px;
+            height: 3px;
+            background-color: #ffd400;
+        }
+        .bottom_style_list .second_bule {
+            display: inline-block;
+            width: 100px;
+            height: 3px;
+            background-color: #2284f1;
+            margin: 0 5px;
+        }
 
+        .bottom_style_list .third_red {
+            display: inline-block;
+            width: 70px;
+            height: 3px;
+            background-color: #ff3838;
+        }
+
+
+    </style>
 </head>
 <body>
-<!--------------------Preloader-------------->
+<!-------------Preloader-------------->
 <div class="preloader" style="position:fixed;
     width:100%;
     height:100%;
@@ -41,7 +73,7 @@
         <img src="images/loader.gif" alt="loading...">
     </div>
 </div>
-<!------------------Preloader end------------------->
+<!-------------Preloader end------------->
 <div class="tp-header">
     <div class="container">
         <div class="row">
@@ -110,6 +142,25 @@
         </nav>
     </div>
 </header>
+<!-------------------Banner begin----------------->
+<section>
+    <div class="blog_banner" style="background-image: url('images/blog_background.png'); height:360px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 section-top-25">
+                    <h2 class="text-white text-center heading2 underline2">探索激发创新潜能 </h2>
+                    <p class="text-white text-center section-top-25">
+                        Exploring inspires innovations.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------Banner end----------------->
+
 <!--Login And Register Modal-->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-sm">
@@ -212,215 +263,59 @@
     </div>
 </div>
 <!--Login And Register Modal-->
-<!--------------About section---------->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 text-center m-t-50">
-            <h2 class="text-center heading underline">关于我们</h2>
-            <p class="text-center">About us</p>
-        </div>
-    </div>
-    <div class="row m-t-50">
-        <div class="col-sm-5">
-            <img src="images/company.jpg" class="img-responsive" alt="about_image">
-            <br/>
-        </div>
-        <div class="col-sm-7">
-            <div class="row">
-                <div class="col-xs-12 text-justify">
-                    <p> 美国上市公司17年编程教学经验，专注3-18 岁少儿编程教育及服务，
-                        形成了以乐高创意启蒙课程、人工智能编程、智能机器人编程、信息学奥赛编程等课程体系为核心，
-                        集国内外大型科技赛事、少儿资格认证考试、科技主题的国内外游学、冬夏令营、创客实验室搭建等为一体的少儿教育平台。</p>
-                    <p> 教学体系落实创新教育理念，
-                        强调学生综合能力的培养和实际解决问题能力的提升，
-                        在兴趣激发和思维锻炼的同时，传递前沿技术，帮助中国青少年打造迎接未来世界的能力和思维视野。</p>
+<!--------------Body Section Start------------->
 
-                    <p> 美国上市公司17年编程教学经验，专注3-18 岁少儿编程教育及服务，
-                        形成了以乐高创意启蒙课程、人工智能编程、智能机器人编程、信息学奥赛编程等课程体系为核心，
-                        集国内外大型科技赛事、少儿资格认证考试、科技主题的国内外游学、冬夏令营、创客实验室搭建等为一体的少儿教育平台。</p>
-                    <p> 教学体系落实创新教育理念，
-                        强调学生综合能力的培养和实际解决问题能力的提升，
-                        在兴趣激发和思维锻炼的同时，传递前沿技术，帮助中国青少年打造迎接未来世界的能力和思维视野。</p>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-------------About section end-->
-<!-------------What We do--------->
-<section class="circle_section parallax m-t-70">
+<!-------------owl carousel------------->
+<section class="bg-default">
     <div class="container">
-        <div class="row section-top-40">
-            <div class="col-md-3 col-sm-6 col-xs-12  text-center text-white">
-                <span class="statics_options" id="Overseas"></span>+
-                <h4 class="text-white">全国城市覆盖</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12  text-center text-white">
-                <span class="statics_options" id="Investors"></span>+
-                <h4 class="text-white">经验丰富的老师</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center text-white">
-                <span class="statics_options" id="Client"></span>+
-                <h4 class="text-white">学习活动中心</h4>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center text-white">
-                <span class="statics_options" id="Success"></span>+
-                <h4 class="text-white">参训儿童</h4>
-            </div>
-        </div
-
-    </div>
-    <br/><br/>
-</section>
-<!------------- What We do end--------->
-
-<!----------------Our Services Section---------->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 m-t-50">
-            <h2 class="heading underline">我们的服务</h2>
-            <p class="text-center">Characteristic Services</p>
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/big-data.png" alt="bigdata" class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>专业课程体系</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>参考美国CSTA标准研发，经NETS和教学实践双重验证，开发出适合中国青少年的编程课程体系，让孩子在未来的赛道上提前起跑。</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/coding.png" alt="bigdata" class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>专业课程体系</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>参考美国CSTA标准研发，经NETS和教学实践双重验证，开发出适合中国青少年的编程课程体系，让孩子在未来的赛道上提前起跑。</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/cloud-computing.png" alt="bigdata"
-                         class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>专业课程体系</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>参考美国CSTA标准研发，经NETS和教学实践双重验证，开发出适合中国青少年的编程课程体系，让孩子在未来的赛道上提前起跑。</p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/light-bulb.png" alt="bigdata" class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>专业课程体系</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>参考美国CSTA标准研发，经NETS和教学实践双重验证，开发出适合中国青少年的编程课程体系，让孩子在未来的赛道上提前起跑。</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/shovel.png" alt="bigdata" class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>专业课程体系</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>参考美国CSTA标准研发，经NETS和教学实践双重验证，开发出适合中国青少年的编程课程体系，让孩子在未来的赛道上提前起跑。</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="row m-t-50">
-                <div class="col-xs-12">
-                    <img src="images/construction-excavator.png" alt="bigdata"
-                         class="img-responsive services_icon center-block">
-                </div>
-                <div class="col-xs-12 text-center">
-                    <h5>专业课程体系</h5>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <p>参考美国CSTA标准研发，经NETS和教学实践双重验证，开发出适合中国青少年的编程课程体系，让孩子在未来的赛道上提前起跑。</p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!------------Meet Our Team Section------->
-<section class="meetourteam m-t-70 parallax">
-    <div class="container">
-        <div class="row">
+        <div class="row wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="col-sm-6 col-sm-offset-3 m-t-50">
-                <h2 class="text-white heading2 underline2 text-center">我们的团队</h2>
-                <p class="text-center text-white">Teaching and Research Team</p>
-
+                <h3 style="text-align:center">足球守门员</h3>
+                <p class="bottom_style_list"><span class="frist_yellow"></span><span class="second_bule"></span><span class="third_red"></span></p>
             </div>
         </div>
-        <div class="row m-t-50">
+        <div class="row section-top-15">
             <div class="col-xs-12">
-                <div class="row">
-                    <div class="col-sm-3 text-center">
-                        <img src="images/man5.png" alt="girlimg"
-                             class="img-responsive img-circle center-block industry-img">
-                        <h4 class="text-white">秦老师</h4>
-                        <p class="text-white">研发总监</p>
-                    </div>
-                    <div class="col-sm-3 text-center">
-                        <img src="images/man5.png" alt="girlimg"
-                             class="img-responsive img-circle center-block industry-img">
-                        <h4 class="text-white">秦老师</h4>
-                        <p class="text-white">研发总监</p>
-                    </div>
-                    <div class="col-sm-3 text-center">
-                        <img src="images/man5.png" alt="girlimg"
-                             class="img-responsive img-circle center-block industry-img">
-                        <h4 class="text-white">秦老师</h4>
-                        <p class="text-white">研发总监</p>
-                    </div>
-                    <div class="col-sm-3 text-center">
-                        <img src="images/man5.png" alt="girlimg"
-                             class="img-responsive img-circle center-block industry-img">
-                        <h4 class="text-white">秦老师</h4>
-                        <p class="text-white">研发总监</p>
-                    </div>
+                <div>
+                    <p id="zp-video" style="text-align: center; margin-top:0px;">
+                        <!--<embed src="http://player.youku.com/player.php/sid/XMjczMzY5ODcy.==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">-->
+
+
+                        <!--
+                            controls: 显示播放控件
+                            autoplay: 自动播放
+                            loop: 播放完毕后再次循环播放
+                        -->
+                        <video width="480" height="360" controls="controls" autoplay="autoplay" loop="loop">
+                            <!--当前video元素支持的视频格式：mp4,ogg, webm, 其中mp4支持度最好，主流浏览器都支持-->
+                            <source src="videos/movie.mp4" type="video/mp4">
+                            <source src="videos/movie.ogg" type="video/ogg">
+                            <source src="videos/movie.webm" type="video/webm">
+
+                            您的浏览器不支持 HTML5 video 标签。
+                        </video>
+                    </p>
+                    <p style="text-align: center">
+                        <img src="images/goalkeeper.jpg" alt="product">
+                    </p>
+
+                    <p style="text-align: center;margin:50px;font-size:21px;color:#999999">
+                        案例中用到了Scratch的“朗读”、“问答”功能积木代码
+                        通过重复执行朗读和问答积木代码，同时对答案进行比较，让小鱼可以判断输入答案的对错
+                        苹果数量的变化是随机的，用到了数学中“随机数”的概念
+                    </p>
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="shape"></div>
+    <!------------Footer Caret Shape------------>
+    <div class="shape section-top-50"></div>
+    <!------------Footer Caret Shape end------------>
 </section>
-<!-----------Meet our team section end------------->
-<!-------------Footer Start------------------>
+<!-----------------owl Ends------------------>
+<!---------------Body Section End------------------->
+<!--------------------Footer Start-------------------->
 <section class="footer_one">
     <footer>
         <div class="container">
@@ -712,17 +607,17 @@
 <!------------------Copy rights End------------------>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="vendors/owlcarousel/js/owl.carousel.min.js"></script>
+<script src="vendors/wow/js/wow.min.js"></script>
+<script src="vendors/swiper/js/swiper.jquery.min.js"></script>
 <script src="vendors/iCheck/js/icheck.js"></script>
-<script src="vendors/isotope/js/isotope.pkgd.min.js"></script>
-<script src="vendors/countup/js/countUp.min.js"></script>
-<script src="vendors/circliful/js/jquery.circliful.min.js"></script>
 <script src="vendors/jribbble/js/jribbble.min.js"></script>
-<script src="vendors/sweetalert2/js/sweetalert2.min.js"></script>
-<!----------------Page Level JS-------------------->
+<script src="vendors/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+<script src="vendors/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+<!--------------custom JS------------------->
 <script src="js/custom.js"></script>
 
 <script type="text/javascript">
-
     $(function(){
 
         $(".contact-us-im li a").hover(function(){

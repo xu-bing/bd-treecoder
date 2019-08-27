@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <title>SERVICES</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>课程项目</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -22,6 +22,7 @@
 
     <!-------------------custom css-------------------->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom-boode.css">
 
     <style type="text/css">
         /*彩虹线*/
@@ -53,6 +54,7 @@
             background-color: #ff3838;
         }
     </style>
+
 </head>
 <body>
 <!------------------Preloader-------------------->
@@ -79,18 +81,38 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-7 col-md-6">
-                <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                <ul class="contact-us-im">
+                    <li>
+                        <a href="tencent://message/?uin=745636944&Menu-=yes"> <i class="icon-font i-qq fa"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="icon-font i-weixin fa"></i></a>
+                        <ul>
+                            <li>
+                                <img src="images/wechat_code.jpg"/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="icon-font i-phone fa"></i></a>
+                        <ul>
+                            <li>
+                                <p>13813726471</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
             </div>
             <div class="col-xs-5 col-md-6 text-right">
-                <span class="signin" data-toggle="modal" data-target="#myModal"><span class="hidden-xs">Sign In</span><i
+                <span class="signin" data-toggle="modal" data-target="#myModal"><span class="hidden-xs" style="color:#223E57">登录</span><i
                         class="fa fa-sign-in visible-xs-block" aria-hidden="true"></i> </span>
                 <span class="register" data-toggle="modal" data-target="#myModal"><span
-                        class="hidden-xs">Register</span><i class="fa fa-user-plus visible-xs-block"
-                                                            aria-hidden="true"></i>
-                </span>
+                        class="hidden-xs" style="color:#223E57">注册</span><i class="fa fa-user-plus visible-xs-block"
+                                                                            aria-hidden="true"></i></span>
+
             </div>
         </div>
     </div>
@@ -107,18 +129,16 @@
 
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/3.png" class="img-responsive" alt="company-logo">
+                    <img src="images/logo.png" class="img-responsive" alt="company-logo">
                 </a>
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myMegamenu">
                 <ul class="nav navbar-nav">
-                    <li class="list2"><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
-                    <li class="list2"><a href="services.html" class="hvr-underline-from-center">SERVICES</a></li>
-                    <li class="list2"><a href="about_us.html" class="hvr-underline-from-center">ABOUT</a></li>
-					<li class="list2"><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
-                    <li class="list2"><a href="careers.html" class="hvr-underline-from-center">CAREERS</a></li>
-					<li class="list2"><a href="products.html" class="hvr-underline-from-center">PRODUCTS</a></li>
-                    <li class="list2"><a href="contact_us.html" class="hvr-underline-from-center">CONTACT US</a></li>
+                    <li class="list2"><a href="index.html" class="hvr-underline-from-center">首页</a></li>
+                    <li class="list2"><a href="courses.html" class="hvr-underline-from-center">课程项目</a></li>
+                    <li class="list2"><a href="teaching_mode.html" class="hvr-underline-from-center">教学模式</a></li>
+                    <li class="list2"><a href="about_us.html" class="hvr-underline-from-center">关于我们</a></li>
+                    <li class="list2"><a href="contact_us.html" class="hvr-underline-from-center">联系我们</a></li>
                 </ul>
             </div>
 
@@ -133,13 +153,11 @@
             <div class="row">
                 <div class="col-md-12 col-xs-12 section-top-25">
                     <h2 class="text-white text-center heading2 underline2">科学的课程体系 </h2>
-                    <p class="text-white text-justify section-top-25">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Corporate describes
-                        team conversation service Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p class="text-white text-center section-top-25">
+                        Scientific curricula system which follows the principle of gradual improvement.
                     </p>
-                    <p class="text-center"><a href="blog_single_post.html"
-                                              class="btn btn-danger btn-md section-top-align">免费试听</a></p>
+                    <p class="text-center"><a href="javascript:void(0)"
+                                              class="btn btn-danger btn-md section-top-align slider_btn_gifted">免费试听</a></p>
                 </div>
 
             </div>
@@ -154,9 +172,9 @@
         <div class="modal-content">
             <br>
             <div class="bs-example bs-example-tabs">
-                <ul id="myTab" class="nav nav-tabs ">
-                    <li id="signin_tab" class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-                    <li id="reg_tab"><a href="#signup" data-toggle="tab">Register</a></li>
+                <ul id="myTab" class="nav nav-tabs">
+                    <li id="signin_tab" class="active"><a href="#signin" data-toggle="tab">登录</a></li>
+                    <li id="reg_tab"><a href="#signup" data-toggle="tab">注册</a></li>
                 </ul>
             </div>
             <div class="modal-body">
@@ -166,27 +184,26 @@
                             <fieldset>
                                 <div class="control-group section-top-10">
                                     <label class="control-label" for="userid"><span
-                                            class="glyphicon glyphicon-user text-primary"></span> User Id :</label>
+                                            class="glyphicon glyphicon-user text-primary"></span> 用户名 :</label>
                                     <div class="controls">
                                         <input id="userid" name="userid" type="text" class="form-control input-medium"
-                                               placeholder="user Id" required>
+                                               placeholder="用户名" required>
                                     </div>
                                 </div>
                                 <div class="control-group section-top-10">
                                     <label class="control-label" for="passwordinput"><span
-                                            class="glyphicon glyphicon-eye-open text-primary"></span> Password :</label>
+                                            class="glyphicon glyphicon-eye-open text-primary"></span> 密码 :</label>
                                     <div class="controls">
                                         <input type="password" id="passwordinput" name="passwordinput"
-                                               class="form-control input-medium" placeholder="Password" required>
+                                               class="form-control input-medium" placeholder="密码" required>
                                     </div>
                                 </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" class="blue">Remember me</label>
-                                </div>
+                                <!--<div class="checkbox">
+                                    <label><input type="checkbox" class="blue">记住我</label>
+                                </div>-->
                                 <div class="control-group">
                                     <div class="controls section-top-10">
-                                        <button id="signin_btn" name="signin" class="btn btn-success form-control">Sign
-                                            In
+                                        <button id="signin_btn" name="signin" classt="btn btn-success form-control">登录
                                         </button>
                                     </div>
                                 </div>
@@ -197,37 +214,37 @@
                         <form class="form-horizontal">
                             <fieldset>
                                 <div class="control-group section-top-10">
-                                    <label for="user"><span class="glyphicon glyphicon-user text-primary"></span> Name
+                                    <label for="user"><span class="glyphicon glyphicon-user text-primary"></span> 用户名
                                         :</label>
                                     <div class="controls">
                                         <input id="user" name="userid" class="form-control input-large" type="text"
-                                               placeholder="Name" required="">
+                                               placeholder="用户名（中文或英文）" required="">
                                     </div>
                                 </div>
                                 <div class="control-group section-top-10">
-                                    <label class="control-label" for="Email_id"><span
-                                            class="glyphicon glyphicon-envelope text-primary"></span> Email :</label>
+                                    <label class="control-label" for="phone_id"><span
+                                            class="glyphicon glyphicon-phone text-primary"></span> 手机 :</label>
                                     <div class="controls">
-                                        <input id="Email_id" name="Email" class="form-control input-large" type="email"
-                                               placeholder="abcdef@xyz.com" required>
+                                        <input id="phone_id" name="Email" class="form-control input-large" type="phone"
+                                               placeholder="手机号码（11位）" required>
                                     </div>
                                 </div>
                                 <div class="control-group section-top-10">
                                     <label for="password"><span
                                             class="glyphicon glyphicon-eye-open text-primary"></span>
-                                        Password :</label>
+                                        密码 :</label>
                                     <div class="controls">
                                         <input id="password" name="password" class="form-control input-large"
-                                               type="password" placeholder="Password" required>
+                                               type="password" placeholder="密码（4-6位）" required>
 
                                     </div>
                                 </div>
                                 <div class="control-group section-top-10">
                                     <label class="control-label" for="reenterpassword"><span
-                                            class="glyphicon glyphicon-repeat text-primary"></span> Re-Enter Password :</label>
+                                            class="glyphicon glyphicon-repeat text-primary"></span> 重复密码 :</label>
                                     <div class="controls">
                                         <input id="reenterpassword" class="form-control input-large"
-                                               name="reenterpassword" type="password" placeholder="Re Enter Password"
+                                               name="reenterpassword" type="password" placeholder="重新输入密码"
                                                required="">
                                     </div>
                                 </div>
@@ -235,7 +252,7 @@
                                     <label class="control-label" for="confirmsignup"></label>
                                     <div class="controls">
                                         <button id="confirmsignup" name="confirmsignup"
-                                                class="btn btn-success form-control">Sign Up
+                                                class="btn btn-success form-control">注册
                                         </button>
                                     </div>
                                 </div>
@@ -245,7 +262,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
             </div>
         </div>
     </div>
@@ -415,7 +432,7 @@
     <div class="row">
         <div class="col-sm-6 col-sm-offset-3 m-t-50 text-center">
             <h2 class="heading underline">我们的课程</h2>
-            <p class="text-center">If we look at pricing holistically, we'll create a more solid business.</p>
+            <p class="text-center">Feature Courses</p>
         </div>
     </div>
     <div class="row">
@@ -548,8 +565,7 @@
         <div class="col-sm-6 col-sm-offset-3 m-t-50">
             <h2 class="heading underline">课程内容</h2>
             <p class="text-center">
-                Sed ut perspiciatis unde omnis iste natus error sitvoluptatem accusantium doloremque
-                laudantium.
+                Course Content
             </p>
         </div>
     </div>
@@ -589,24 +605,24 @@
                 <h4 style="color:#E2720E">Level1</h4>
                 <p class="text-justify section-top-10"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
                 <p class="text-justify"> 丰富有趣的故事，浅显易懂的讲解，从零开始轻松入门Scratch3.0编程。学会创作动画、音乐、美术、游戏等作品。
-                <a href="#" class="text-success">了解更多</a>
+               <!-- <a href="#" class="text-success">了解更多</a>-->
                 </p>
                 <h4 class="section-top-25" style="color:#E2720E">Level2</h4>
                 <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
                 <p class="text-justify"> 跟随玩仔和周周进入代码世界去冒险，学习事件、循环、变量、逻辑判断等基本的计算机程序设计方面的知识。
-                <a href="#" class="text-success">了解更多</a>
+                <!--<a href="#" class="text-success">了解更多</a>-->
                 </p>
             </div>
             <div class="col-md-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                 <h4 style="color:#E2720E">Level3</h4>
                 <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
                 <p> 踏上寻找十二神兽之旅，解锁克隆、列表、函数等高级的技能，学习游戏设计的思想，激发学生无穷的创意。
-                <a href="#" class="text-success">了解更多</a>
+                <!--<a href="#" class="text-success">了解更多</a>-->
                 </p>
                 <h4 class="section-top-25" style="color:#E2720E">Level4</h4>
                 <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
                 <p class="text-justify">将Scratch和Picoboard相结合，利用各种传感器做出生动有趣的游戏。如水果电阻、植物大战僵尸、声控版碰碰车。
-                <a href="#" class="text-success">了解更多</a>
+                <!--<a href="#" class="text-success">了解更多</a>-->
                 </p>
             </div>
         </div>
@@ -624,32 +640,28 @@
                 <img src="images/webdevelopment1.jpg" class="img-responsive" alt="it_service _image">
             </div>
                 <p class="text-justify section-top-25">
-                    Scratch是麻省理工学院的“终身幼儿园团队”开发的图形化编程工具。</p>
-                <p class="text-justify"> 不仅易于孩子们使用，又能寓教于乐，让孩子们获得创作中的乐趣。
+                    Arduino是由一个欧洲开发团队于2005年冬季开发的一款便捷灵活、方便上手的开源电子原型平台。包含硬件和软件部分。</p>
+                <p class="text-justify"> 它简单易学，硬件操作十分简单，小孩子能轻松上手，结合Arduino与各种传感器， 设计好玩实用的作品。
                 </p>
             </div>
             <div class="section-top-10 col-md-4">
                 <h4 style="color:#E2720E">Level1</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 丰富有趣的故事，浅显易懂的讲解，从零开始轻松入门Scratch3.0编程。学会创作动画、音乐、美术、游戏等作品。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">四年级以上</span></p>
+                <p class="text-justify"> 学习常用的的Arduinot板、LED、舵机, 学习基础的电子电路知识和传感器知识，学习循环、条件、变量等基础编程知识。创作按键钢琴，投石机等有趣作品。
                 </p>
                 <h4 class="section-top-25" style="color:#E2720E">Level2</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 跟随玩仔和周周进入代码世界去冒险，学习事件、循环、变量、逻辑判断等基本的计算机程序设计方面的知识。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">四年级以上</span></p>
+                <p class="text-justify"> 认识人体红外、手势传感器、温度传感器等进阶传感器，数码管和点阵屏等显示器，制作出电子时钟，迎宾机器人，扫地机器人等有趣的作品。
                 </p>
             </div>
             <div class="section-top-10 col-md-4">
                 <h4 style="color:#E2720E">Level3</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 踏上寻找十二神兽之旅，解锁克隆、列表、函数等高级的技能，学习游戏设计的思想，激发学生无穷的创意。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">四年级以上</span></p>
+                <p class="text-justify"> 认识循迹传感器、倾角传感器、三维角度传感器、蓝牙模块和LCD等元器件，制作出电子时钟，迎宾机器人，扫地机器人等有趣的作品。
                 </p>
                 <h4 class="section-top-25" style="color:#E2720E">Level4</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 将Scratch和Picoboard相结合，利用各种传感器做出生动有趣的游戏。如水果电阻、植物大战僵尸、声控版碰碰车。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">四年级以上</span></p>
+                <p class="text-justify"> 认识语音识别、指纹识别和WIFI等高级模块，了解生活中常见智能设备的硬件组成和设计原理，自己设计出能改善生活的智能设备。。
                 </p>
             </div>
         </div>
@@ -668,32 +680,28 @@
                     <img src="images/webdevelopment1.jpg" class="img-responsive" alt="it_service _image">
                 </div>
                 <p class="text-justify section-top-25">
-                    Scratch是麻省理工学院的“终身幼儿园团队”开发的图形化编程工具。</p>
-                <p class="text-justify"> 不仅易于孩子们使用，又能寓教于乐，让孩子们获得创作中的乐趣。
+                Python已经成为全球排名前四的语言，从云端、客户端，到物联网终端，python应用无处不在。相对于其他语言，Python更加易学、易读，非常适合快速开发。
+                <p class="text-justify"> 通过学习，可参加全国IT类科技竞赛--蓝桥杯，以赛促学，为孩子的出国升学加分。
                 </p>
             </div>
             <div class="section-top-10 col-md-4">
                 <h4 style="color:#E2720E">Level1</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 丰富有趣的故事，浅显易懂的讲解，从零开始轻松入门Scratch3.0编程。学会创作动画、音乐、美术、游戏等作品。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">五年级以上</span></p>
+                <p class="text-justify"> 主要利用turtle海龟库，绘制各色的形状和图案，在充满趣味性的学习过程中逐步引导学员入门Python语言。
                 </p>
                 <h4 class="section-top-25" style="color:#E2720E">Level2</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 跟随玩仔和周周进入代码世界去冒险，学习事件、循环、变量、逻辑判断等基本的计算机程序设计方面的知识。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">五年级以上</span></p>
+                <p class="text-justify"> 学习Python的基础知识，如字典，集合，函数，以及类和对象，继承与多态等，为之后进一步学习打好基础。
                 </p>
             </div>
             <div class="section-top-10 col-md-4">
                 <h4 style="color:#E2720E">Level3</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 踏上寻找十二神兽之旅，解锁克隆、列表、函数等高级的技能，学习游戏设计的思想，激发学生无穷的创意。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">五年级以上</span></p>
+                <p class="text-justify">使用专业的PyCharm编写代码,通过学习Pygame框架，学会制作简单的2D小游戏，如“愤怒的小鸟”，“坦克大战”等。
                 </p>
                 <h4 class="section-top-25" style="color:#E2720E">Level4</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 将Scratch和Picoboard相结合，利用各种传感器做出生动有趣的游戏。如水果电阻、植物大战僵尸、声控版碰碰车。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">五年级以上</span></p>
+                <p class="text-justify"> 学习网络传输的知识，学会从网上爬取所需的信息，制作网络爬虫，抓取学习资料。
                 </p>
             </div>
         </div>
@@ -712,32 +720,32 @@
                     <img src="images/webdevelopment1.jpg" class="img-responsive" alt="it_service _image">
                 </div>
                 <p class="text-justify section-top-25">
-                    Scratch是麻省理工学院的“终身幼儿园团队”开发的图形化编程工具。</p>
-                <p class="text-justify"> 不仅易于孩子们使用，又能寓教于乐，让孩子们获得创作中的乐趣。
+                    全国青少年信息学奥林匹克联赛（NOIP）由中国计算机学会统一组织，是一项面向全国青少年的信息学竞赛和普及活动。通过竞赛和相关的活动培养和选拔优秀的计算机人才。</p>
+                <p class="text-justify"> 通过竞赛获奖的同学，享有加分保送的优惠政策。
                 </p>
             </div>
             <div class="section-top-10 col-md-4">
                 <h4 style="color:#E2720E">Level1</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 丰富有趣的故事，浅显易懂的讲解，从零开始轻松入门Scratch3.0编程。学会创作动画、音乐、美术、游戏等作品。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">六年级以上</span></p>
+                <p class="text-justify"> 结合“多功能计算器”，讲解C++的变量、表达式、数据类型条件语句、循环语句等知识。
+                   <!---->
                 </p>
                 <h4 class="section-top-25" style="color:#E2720E">Level2</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 跟随玩仔和周周进入代码世界去冒险，学习事件、循环、变量、逻辑判断等基本的计算机程序设计方面的知识。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">六年级以上</span></p>
+                <p class="text-justify"> 结合加密解密程序、文章着色程序等实例讲解递归、数组等知识。
+
                 </p>
             </div>
             <div class="section-top-10 col-md-4">
                 <h4 style="color:#E2720E">Level3</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 踏上寻找十二神兽之旅，解锁克隆、列表、函数等高级的技能，学习游戏设计的思想，激发学生无穷的创意。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">六年级以上</span></p>
+                <p class="text-justify"> 结合排序程序、飞机大战游戏，讲解排序算法、结构体等知识。
+
                 </p>
                 <h4 class="section-top-25" style="color:#E2720E">Level4</h4>
-                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">三年级以上</span></p>
-                <p class="text-justify"> 将Scratch和Picoboard相结合，利用各种传感器做出生动有趣的游戏。如水果电阻、植物大战僵尸、声控版碰碰车。
-                    <a href="#" class="text-success">了解更多</a>
+                <p class="text-justify"><span style="border:1px #0075C2 dashed;border-radius:5px">六年级以上</span></p>
+                <p class="text-justify"> 结合题目介绍格式化输入输出、枚举、模拟、时间复杂度等知识。
+
                 </p>
             </div>
         </div>
@@ -756,26 +764,44 @@
         <div class="container">
             <div class="row section-top-40">
                 <div class="col-md-3 col-sm-6 section-top-25">
-                    <h4 class="text-white">Corporate</h4>
+                    <h4 class="text-white">联系我们</h4>
                     <hr/>
                     <div class="row">
-                        <div class="col-xs-12">
+                        <!--<div class="col-xs-12">
                             <p class="footer_text_color">There are many variations of passages of Lorem Ipsum available,
                                 but
                                 the majority have suffered alteration.</p>
-                        </div>
+                        </div>-->
 
                         <div class="col-xs-12">
-                            <span class="foot_icon">
-                            <a href="#"><i class="fa fa-facebook section-top-10 footer_social_icons"
-                                           aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter section-top-10 footer_social_icons"
-                                           aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-linkedin section-top-10 footer_social_icons"
-                                           aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-instagram section-top-10 footer_social_icons"
-                                           aria-hidden="true"></i></a>
-                        </span>
+                            <span class="foot_icon" style="margin:0px;padding:0px">
+                                <!--<a href="#"> <i class="icon-font i-qq-border fa section-top-10 footer_social_icons"></i></a>
+                                <a href="#"> <i class="icon-font i-weixin-border fa section-top-10 footer_social_icons"></i></a>
+                                <a href="#"> <i class="icon-font i-phone fa section-top-10 footer_social_icons"></i></a>-->
+
+                                <ul class="contact-us-im">
+                                    <li style="float:left;">
+                                        <a href="tencent://message/?uin=745636944&Menu-=yes"> <i class="icon-font i-qq-border fa section-top-10 footer_social_icons"></i></a>
+                                    </li>
+                                    <li style="float:left">
+                                        <a href="#"> <i class="icon-font i-weixin-border fa section-top-10 footer_social_icons"></i></a>
+                                        <ul>
+                                                <li>
+                                                    <img src="images/wechat_code.jpg"/>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li style="float:left">
+                                        <a href="#"> <i class="icon-font i-phone fa section-top-10 footer_social_icons"></i></a>
+                                        <ul>
+                                                <li>
+                                                    <p>13813726471</p>
+                                                </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </span>
                         </div>
 
                     </div>
@@ -784,41 +810,49 @@
                 <div class="col-md-3  col-lg-3 col-sm-6 section-top-25">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h4 class="text-white">Recent Posts</h4>
+                            <h4 class="text-white">关于我们</h4>
                             <hr/>
                         </div>
-                        <div class="footer_contact">
-                            <div class="col-md-1  col-xs-1"><a href="blog.html"><i class="fa fa-caret-right div_hover1"
-                                                                                   aria-hidden="true"></i></a></div>
-                            <div class="col-md-10  col-xs-10"><a href="blog.html" class="div_hover2">The right team in
-                                the
-                                right place</a><br/><span class="footer_text_color">Jan. 25, 2017   </span></div>
+                        <div class="footer_contact text-white">
+                            <div class="col-md-12  col-xs-12">南通小树少儿编程</div>
+                        </div>
+                        <div class="footer_contact text-white">
+                            <div class="col-md-12  col-xs-12">TreeCoder</div>
                         </div>
                         <div class="clearfix visible-xs-block visible-sm-block visible-lg-block visible-md-block"></div>
                         <div class="footer_contact">
-                            <div class="col-md-1  col-xs-1 section-top-10"><a href="blog.html"><i
-                                    class="fa fa-caret-right div_hover1" aria-hidden="true"></i></a></div>
-                            <div class="col-md-10  col-xs-10 section-top-10"><a href="blog.html" class="div_hover2">How
-                                to
-                                develop your company </a><br/><span class="footer_text_color">Jan. 21, 2017   </span>
-                            </div>
+                            <div class="col-md-12  col-xs-12 text-white">地址：南通市崇川区中南世纪城15号楼/崇川区中江国际广场4号楼B座</div>
                         </div>
                         <div class="clearfix visible-xs-block visible-sm-block visible-lg-block visible-md-block"></div>
                         <div class="footer_contact">
-                            <div class="col-md-1  col-xs-1 section-top-10"><a href="blog.html"><i
-                                    class="fa fa-caret-right div_hover1" aria-hidden="true"></i></a></div>
-                            <div class="col-md-10  col-xs-10 section-top-10"><a href="blog.html" class="div_hover2">
-                                Managing your community blog</a><br/><span
-                                    class="footer_text_color">Jan. 18, 2017   </span>
-                            </div>
+                            <div class="col-md-12  col-xs-12 text-white">电话：0513-85336466/13813726471</div>
                         </div>
+                        <!--
+                        <div class="footer_contact">
+                            <div class="col-md-12  col-xs-12 text-white">邮箱：</div>
+                        </div>-->
                     </div>
                 </div>
                 <div class="col-md-3 col-lg-3 col-sm-6 section-top-25">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h4 class="text-white">Dribbble</h4>
+                            <h4 class="text-white">其它服务</h4>
                             <hr/>
+                            <div class="cell-other-service">
+                                <!--<li class="ea-others-a"><a rel="nofollow" href="http://kids.codepku.com">编程少年</a></li>
+                                <li class="ea-others-a"><a rel="nofollow" href="http://scratch.codepku.com">Scratch网站</a></li>
+                                <li class="ea-others-a"><a href="http://www.91goodschool.com/">合作伙伴：好学校</a></li>-->
+                                <a rel="nofollow" href="" class="text-white">编程少年</a> <br>
+                                <a rel="nofollow" href="" class="text-white">Scratch网站</a> <br>
+                                <a href="http://www.91goodschool.com/" class="text-white">合作伙伴：好学校</a> <br>
+                                <img
+                                        src="images/wechat_code.jpg"
+                                        alt="编程少年的二维码我没有源文件"
+                                        class="cell-others-img"
+                                        style="margin-top:12px">
+                                <!--<p class="qrcode_title" style="color: #999999;text-align:center;margin-top: 20px">扫描免费领取价值千元试听课</p>-->
+                                <p class="qrcode_title" style="color: #ffffff;margin-top: 20px">扫描免费领取价值千元试听课</p>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -830,40 +864,190 @@
                 <div class="col-md-3 col-sm-6 section-top-25">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h4 class="text-white">Twitter Feed</h4>
+                            <h4 class="text-white">免费在线体验课</h4>
                             <hr/>
+                            <div class="cell-forms-area">
+                                <div class="form-group">
+                                    <input type="text" class="form-control ea-input" name="name" placeholder="孩子的姓名">
+                                </div>
+                                <!-- <div class="form-group">
+                                    <input type="number" class="form-control ea-input" name="age" placeholder="孩子的年龄">
+                                </div> -->
+                                <div class="form-group">
+                                    <select class="form-control ea-input" name="grade">
+                                        <option value>请选择孩子年级</option>
+                                        <option value="-1">学前</option>
+                                        <option value="1">一年级</option>
+                                        <option value="2">二年级</option>
+                                        <option value="3">三年级</option>
+                                        <option value="4">四年级</option>
+                                        <option value="5">五年级</option>
+                                        <option value="6">六年级</option>
+                                        <option value="7">初一</option>
+                                        <option value="8">初二</option>
+                                        <option value="9">初三</option>
+                                        <option value="10">高一</option>
+                                        <option value="11">高二</option>
+                                        <option value="12">高三</option>
+                                        <option value="13">成人</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control ea-input" name="mobile"
+                                           placeholder="家长手机号码"/>
+                                </div>
+                                <div class="form-group mdui-clearfix">
+                                    <div class="get-code-input">
+                                        <input type="text" class="form-control ea-input" name="verify-code"
+                                               placeholder="输入验证码" style="width:55%;display:inline;">
+                                        <a href="javascript:;" class="btn get-code-button gift-reg-get-verify-code"
+                                           id="footerFormGetCode">获取验证码</a>
+                                    </div>
+                                    <!--<button class="btn get-code-button">获取验证码</button>-->
+                                </div>
+
+
+                                <div class="form-group">
+                                    <button class="form-control submit-input confirm-apply-gifted-course-btn"
+                                            style="
+                                            height: 40px;
+                                            background-color: #2284f1;
+                                            border-radius: 4px;
+                                            color: #fff;
+                                            font-size: 16px;
+                                            outline: none;
+                                            box-shadow: none;
+                                            border: none;">立即预约
+                                    </button>
+                                </div>
+                            </div>
+                            </form>
                         </div>
 
-                        <div class="col-xs-12">
-                            <div class="tweet">
-                            </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="tweet">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </footer>
 </section>
 <!-------------------Footer section End------------------>
 <!------------------Copy rights------------------->
+
 <section class="copy-rights">
     <div class="container ">
         <div class="row">
             <div class="col-xs-12 col-sm-6 section-top-15">
-                <p class="footer_text_color"><a href="index.html">Home</a> &nbsp;
-                    <a href="services.html">Services</a> &nbsp;
-                    <a href="about_us.html">About</a> &nbsp;
-                    <a href="careers.html">Careers</a>
-                </p>
+                <p class="footer_text_color"><a href="index.html">首页</a> &nbsp;
+                    <a href="courses.html">课程项目</a> &nbsp;
+                    <a href="teaching_mode.html">教学模式</a>&nbsp;
+                    <a href="about_us.html">关于我们</a></p>
+
             </div>
             <div class="col-xs-12 col-sm-6 text-right section-top-15">
 
-                <p class="footer_text_color  ">Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                <p class="footer_text_color">南通博得教育咨询有限公司 http://www.treecoder.cn 版权所有 <br></b>苏IP备<a href="http://beian.miit.gov.cn">13008877-5</a>号</p>
             </div>
         </div>
         <a href="#" id="return-to-top"><img src="images/backto.png" alt="image-missing"></a>
     </div>
 </section>
+<!------------------Copy rights End------------------>
+
+<!--模态框：免费视听课-->
+<div class="modal fade" id="gifted-course-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog free-experience-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <span class="fa fa-close fa-lg"></span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">申请免费试听课</h4>
+            </div>
+            <form method="POST" action="teach/mode" accept-charset="UTF-8" id="course-gift-form" class="form-inline"><input name="_token" type="hidden" value="D511LSefbBonp2zUIwmFr6kb8juWlgucpuLaYu4J">
+                <div class="modal-body clearfix">
+                    <div class="center-area">
+                        <input name="from" type="hidden" value="">
+                        <input name="reason" type="hidden" value="">
+                        <div class="form-group">
+                            <div class="group">
+                                <div class="left-group">
+                                    <span class="fa fa-user"></span>
+                                </div>
+                                <div class="right-group">
+                                    <input type="text" name="name" placeholder="孩子姓名">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="group">
+                                <div class="left-group">
+                                    <span class="fa fa-clock-o"></span>
+                                </div>
+                                <div class="right-group">
+                                    <select name="grade" class="form-control" style="width: 100%; border: none; box-shadow: none; height: auto; padding-top: 0;">
+                                        <option value>请选择孩子年级</option>
+                                        <option value="-1">学前</option>
+                                        <option value="1">一年级</option>
+                                        <option value="2">二年级</option>
+                                        <option value="3">三年级</option>
+                                        <option value="4">四年级</option>
+                                        <option value="5">五年级</option>
+                                        <option value="6">六年级</option>
+                                        <option value="7">初一</option>
+                                        <option value="8">初二</option>
+                                        <option value="9">初三</option>
+                                        <option value="10">高一</option>
+                                        <option value="11">高二</option>
+                                        <option value="12">高三</option>
+                                        <option value="13">成人</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="group">
+                                <div class="left-group">
+                                    <span class="fa fa-phone"></span>
+                                </div>
+                                <div class="right-group">
+                                    <input type="text" name="mobile" class="reg-mobile" placeholder="家长手机号">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div style="width: 400px;max-width: 100%;">
+                                <div class="group" style="width: 73%; float: left;">
+                                    <div class="left-group" style="width: 26.7%;">
+                                        <span class="glyphicon glyphicon-send"></span>
+                                    </div>
+                                    <div class="right-group" style="width: 70%;">
+                                        <input type="text" name="verify-code" placeholder="验证码">
+                                    </div>
+                                </div>
+                                <div style="width: 24%; float: left; margin-left: 1%; margin-top: 20px;">
+                                    <a href="javascript:;" style="height: 40px; padding-top: 9px;color: #333;background-color: #fff;border-color: #ccc;"
+                                       class="btn btn-default gift-reg-get-verify-code" id="formGetCode">发送验证码</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary confirm-apply-gifted-course-btn" id="course-gift-btn">
+                        立即申请
+                    </button>
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>-->
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
 <!------------------Copy rights End------------------>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -877,5 +1061,22 @@
 <script src="vendors/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
 <!----------------Page Level JS-------------------->
 <script src="js/custom.js"></script>
+
+<script type="text/javascript">
+
+    $(function(){
+
+        $(".contact-us-im li a").hover(function(){
+
+            $(this).next().show();
+        }, function(){
+            $(this).next().hide();
+        });
+
+        $('.slider_btn_gifted').on('click', function () {
+            $('#gifted-course-modal').modal();
+        });
+    });
+</script>
 </body>
 </html>

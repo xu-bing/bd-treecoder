@@ -1,0 +1,197 @@
+/*免费视听*/
+.free_lecture_form {
+  padding: 33px 20px;
+  text-align: justify;
+  background-color: #223e57;
+  vertical-align: middle;
+}
+
+.bs-example-modal-lg .modal-dialog .video-modal-content .free_lecture_form{
+  padding: 33px 20px;
+  text-align: justify;
+  background-color: #223e57;
+  vertical-align: middle;
+}
+.bs-example-modal-lg .modal-dialog .video-modal-content .free_lecture_form .text_enter_name,.text_select_age,.text_enter_phone{
+  width: 144px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #eee;
+  border: none;
+  text-indent: 10px;
+  margin-right: 16px;
+  outline: none;
+}
+.bs-example-modal-lg .modal-dialog .video-modal-content .free_lecture_form .authentication_number{
+  width: 200px;
+  height: 37px;
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.authentication_number{
+  width: 200px;
+  height: 37px;
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.bs-example-modal-lg .modal-dialog .video-modal-content .free_lecture_form .authentication_number .text_enter_number{
+  width: 124px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #eee;
+  border: none;
+  text-indent: 10px;
+  margin-right: 4px;
+  outline: none;
+}
+
+.bs-example-modal-lg .modal-dialog .video-modal-content .free_lecture_form .authentication_number .enter_number_click{
+  width: 67px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #2284f1;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  line-height: 37px;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  display: inline-block;
+}
+
+.enter_number_click{
+  width: 67px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #2284f1;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  line-height: 37px;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  display: inline-block;
+}
+
+.bs-example-modal-lg .modal-dialog .video-modal-content .free_lecture_form .goto_success{
+  width: 140px;
+  height: 40px;
+  display: inline-block;
+  background-color: #2284f1;
+  color: #fff;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+
+.get-code-button {
+  padding: 0;
+  outline: none;
+  width: 109px;
+  height: 39px;
+  line-height: 1.6;
+  padding: 8px 12px;
+  background-color: #666666;
+  border-radius: 4px;
+  color: #ffffff;
+  float: right;
+}
+
+
+
+/*
+页脚免费视听框
+*/
+
+/*模态框*/
+.free-experience-modal {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header h4, .close {
+  color: black !important;
+  text-align: center;
+  font-size: 18px;
+}
+
+.modal-title h4{
+  font-size:18px;
+  color:black;
+}
+
+.free-experience-modal .group {
+  width: 400px;
+  height: 40px;
+  border: 1px solid #e3e3e3;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.free-experience-modal .group .left-group {
+  float: left;
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.free-experience-modal .group .right-group {
+  float: left;
+  width: 80%;
+  height: 40px;
+  line-height: 40px;
+}
+
+.free-experience-modal .group .right-group input {
+  height: 90%;
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+
+/*im: contact us*/
+.contact-us-im{
+  list-style-type: none;
+  margin-left:0px;
+  padding:0px;
+}
+
+.contact-us-im li{
+  float:left;
+}
+
+.contact-us-im li ul{
+  position:absolute;z-index:100;margin-left:-70px;display:none;
+  margin-top:10px;
+  list-style-type: none;
+}
+.contact-us-im li img{
+  width:120px;height:120px;
+}
+
+.contact-us-im li p{
+  top: -5px;
+  margin-left:-40px;
+  width: 200px;
+  height: 60px;
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #86CB35;
+}
